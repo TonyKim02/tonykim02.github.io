@@ -1,0 +1,1262 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+	<title>Hyun Bin Kim&#x27;s Random Thoughts - notes</title>
+	<subtitle>Blog, Portfolio, and Random Thoughts of Hyun Bin Kim</subtitle>
+	<link href="https://tonykim02.github.io./categories/notes/atom.xml" rel="self" type="application/atom+xml"/>
+  <link href="https://tonykim02.github.io."/>
+	<generator uri="https://www.getzola.org/">Zola</generator>
+	<updated>2023-02-22T22:24:00-05:00</updated>
+	<id>https://tonykim02.github.io./categories/notes/atom.xml</id>
+	<entry xml:lang="en">
+		<title>CSC209 Notes</title>
+		<published>2023-02-22T22:24:00-05:00</published>
+		<updated>2023-02-22T22:24:00-05:00</updated>
+		<link rel="alternate" href="https://tonykim02.github.io./notes/CSC209/209/" type="text/html"/>
+		<id>https://tonykim02.github.io./notes/CSC209/209/</id>
+		<content type="html">&lt;script type=&quot;text&#x2F;x-mathjax-config&quot;&gt;
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [[&#x27;$&#x27;,&#x27;$&#x27;], [&#x27;\\(&#x27;,&#x27;\\)&#x27;]],
+    processEscapes: true
+  }
+});
+&lt;&#x2F;script&gt;
+&lt;script
+  src=&quot;https:&#x2F;&#x2F;cdnjs.cloudflare.com&#x2F;ajax&#x2F;libs&#x2F;mathjax&#x2F;2.7.3&#x2F;MathJax.js?config=TeX-MML-AM_CHTML&quot;&gt;
+&lt;&#x2F;script&gt;
+&lt;script type=&quot;text&#x2F;javascript&quot;
+  src=&quot;https:&#x2F;&#x2F;cdn.mathjax.org&#x2F;mathjax&#x2F;latest&#x2F;MathJax.js?config=TeX-AMS-MML_HTMLorMML&quot;&gt;
+&lt;&#x2F;script&gt;
+&lt;!-- include mermaid support --&gt;
+&lt;script src=&quot;https:&#x2F;&#x2F;cdn.jsdelivr.net&#x2F;npm&#x2F;mermaid&#x2F;dist&#x2F;mermaid.min.js&quot;&gt;&lt;&#x2F;script&gt;
+&lt;script&gt;mermaid.initialize({startOnLoad:true});&lt;&#x2F;script&gt;
+&lt;p&gt;This note includes all my concurrent notes regarding UofT Course CSC209. &lt;&#x2F;p&gt;
+&lt;h1 id=&quot;table-of-contents&quot;&gt;Table of Contents&lt;&#x2F;h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;tonykim02.github.io.&#x2F;notes&#x2F;CSC209&#x2F;209&#x2F;#table-of-contents&quot;&gt;Table of Contents&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;tonykim02.github.io.&#x2F;notes&#x2F;CSC209&#x2F;209&#x2F;#week-1&quot;&gt;Week 1&lt;&#x2F;a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;tonykim02.github.io.&#x2F;notes&#x2F;CSC209&#x2F;209&#x2F;#pcrs&quot;&gt;PCRS&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;tonykim02.github.io.&#x2F;notes&#x2F;CSC209&#x2F;209&#x2F;#lecture-slides&quot;&gt;Lecture Slides&lt;&#x2F;a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;tonykim02.github.io.&#x2F;notes&#x2F;CSC209&#x2F;209&#x2F;#shells&quot;&gt;Shells&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;tonykim02.github.io.&#x2F;notes&#x2F;CSC209&#x2F;209&#x2F;#std-output-std-input-and-piping&quot;&gt;Std output, Std input, and piping&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;tonykim02.github.io.&#x2F;notes&#x2F;CSC209&#x2F;209&#x2F;#filesystem&quot;&gt;Filesystem&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;tonykim02.github.io.&#x2F;notes&#x2F;CSC209&#x2F;209&#x2F;#file-permissions&quot;&gt;File Permissions&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;tonykim02.github.io.&#x2F;notes&#x2F;CSC209&#x2F;209&#x2F;#labs&quot;&gt;Labs&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;tonykim02.github.io.&#x2F;notes&#x2F;CSC209&#x2F;209&#x2F;#week-2&quot;&gt;Week 2&lt;&#x2F;a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;tonykim02.github.io.&#x2F;notes&#x2F;CSC209&#x2F;209&#x2F;#pcrs-1&quot;&gt;PCRS&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;tonykim02.github.io.&#x2F;notes&#x2F;CSC209&#x2F;209&#x2F;#lecture&quot;&gt;Lecture&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;tonykim02.github.io.&#x2F;notes&#x2F;CSC209&#x2F;209&#x2F;#worksheet&quot;&gt;Worksheet&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;tonykim02.github.io.&#x2F;notes&#x2F;CSC209&#x2F;209&#x2F;#week-3&quot;&gt;Week 3&lt;&#x2F;a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;tonykim02.github.io.&#x2F;notes&#x2F;CSC209&#x2F;209&#x2F;#pcrs-2&quot;&gt;PCRS&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;tonykim02.github.io.&#x2F;notes&#x2F;CSC209&#x2F;209&#x2F;#lecture-slides-1&quot;&gt;Lecture Slides&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;tonykim02.github.io.&#x2F;notes&#x2F;CSC209&#x2F;209&#x2F;#additional-notes&quot;&gt;Additional Notes&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;tonykim02.github.io.&#x2F;notes&#x2F;CSC209&#x2F;209&#x2F;#week-4&quot;&gt;Week 4&lt;&#x2F;a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;tonykim02.github.io.&#x2F;notes&#x2F;CSC209&#x2F;209&#x2F;#pcrs-3&quot;&gt;PCRS&lt;&#x2F;a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;tonykim02.github.io.&#x2F;notes&#x2F;CSC209&#x2F;209&#x2F;#strings&quot;&gt;Strings&lt;&#x2F;a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;tonykim02.github.io.&#x2F;notes&#x2F;CSC209&#x2F;209&#x2F;#copying-strings&quot;&gt;Copying Strings&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;tonykim02.github.io.&#x2F;notes&#x2F;CSC209&#x2F;209&#x2F;#string-concatenation&quot;&gt;String concatenation&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;tonykim02.github.io.&#x2F;notes&#x2F;CSC209&#x2F;209&#x2F;#searching-with-strings&quot;&gt;Searching with Strings&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;tonykim02.github.io.&#x2F;notes&#x2F;CSC209&#x2F;209&#x2F;#structs&quot;&gt;Structs&lt;&#x2F;a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;tonykim02.github.io.&#x2F;notes&#x2F;CSC209&#x2F;209&#x2F;#using-structs-in-functions&quot;&gt;Using structs in functions&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;tonykim02.github.io.&#x2F;notes&#x2F;CSC209&#x2F;209&#x2F;#using-structs-in-functions-1&quot;&gt;Using Structs in Functions&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;tonykim02.github.io.&#x2F;notes&#x2F;CSC209&#x2F;209&#x2F;#pointers-to-structs&quot;&gt;Pointers to Structs&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;tonykim02.github.io.&#x2F;notes&#x2F;CSC209&#x2F;209&#x2F;#dynmaic-memory-and-strings&quot;&gt;Dynmaic memory and strings&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;tonykim02.github.io.&#x2F;notes&#x2F;CSC209&#x2F;209&#x2F;#linked-structures-and-iteration&quot;&gt;Linked Structures and Iteration&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;tonykim02.github.io.&#x2F;notes&#x2F;CSC209&#x2F;209&#x2F;#lecture-notes&quot;&gt;Lecture Notes&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;tonykim02.github.io.&#x2F;notes&#x2F;CSC209&#x2F;209&#x2F;#additional-notes-1&quot;&gt;Additional Notes&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;tonykim02.github.io.&#x2F;notes&#x2F;CSC209&#x2F;209&#x2F;#week-5&quot;&gt;Week 5&lt;&#x2F;a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;tonykim02.github.io.&#x2F;notes&#x2F;CSC209&#x2F;209&#x2F;#pcrs-4&quot;&gt;PCRS&lt;&#x2F;a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;tonykim02.github.io.&#x2F;notes&#x2F;CSC209&#x2F;209&#x2F;#writing-to-files&quot;&gt;Writing to Files&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;tonykim02.github.io.&#x2F;notes&#x2F;CSC209&#x2F;209&#x2F;#putting-it-all-together&quot;&gt;Putting it all together&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;tonykim02.github.io.&#x2F;notes&#x2F;CSC209&#x2F;209&#x2F;#low-level-io&quot;&gt;Low Level IO&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;tonykim02.github.io.&#x2F;notes&#x2F;CSC209&#x2F;209&#x2F;#complier-toolchain&quot;&gt;Complier Toolchain&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;tonykim02.github.io.&#x2F;notes&#x2F;CSC209&#x2F;209&#x2F;#header-files&quot;&gt;Header files&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;tonykim02.github.io.&#x2F;notes&#x2F;CSC209&#x2F;209&#x2F;#makefile&quot;&gt;Makefile&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;tonykim02.github.io.&#x2F;notes&#x2F;CSC209&#x2F;209&#x2F;#lecture-notes-1&quot;&gt;Lecture Notes&lt;&#x2F;a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;tonykim02.github.io.&#x2F;notes&#x2F;CSC209&#x2F;209&#x2F;#five-standard-actions&quot;&gt;Five Standard Actions&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;tonykim02.github.io.&#x2F;notes&#x2F;CSC209&#x2F;209&#x2F;#week-6&quot;&gt;Week 6&lt;&#x2F;a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;tonykim02.github.io.&#x2F;notes&#x2F;CSC209&#x2F;209&#x2F;#pcrs-5&quot;&gt;PCRS&lt;&#x2F;a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#&quot;&gt;&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;tonykim02.github.io.&#x2F;notes&#x2F;CSC209&#x2F;209&#x2F;#for-midterm&quot;&gt;For Midterm&lt;&#x2F;a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;tonykim02.github.io.&#x2F;notes&#x2F;CSC209&#x2F;209&#x2F;#c-function-prototypes&quot;&gt;C function prototypes&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h1 id=&quot;week-1&quot;&gt;Week 1&lt;&#x2F;h1&gt;
+&lt;ul&gt;
+&lt;li&gt;This week is the introduction to the course. &lt;&#x2F;li&gt;
+&lt;li&gt;Inverted class stlye (learn the materials beforehand + do worksheets during class)&lt;&#x2F;li&gt;
+&lt;li&gt;Assessments &lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Work&lt;&#x2F;th&gt;&lt;th&gt;Weight&lt;&#x2F;th&gt;&lt;th&gt;Deadline&lt;&#x2F;th&gt;&lt;&#x2F;tr&gt;&lt;&#x2F;thead&gt;&lt;tbody&gt;
+&lt;tr&gt;&lt;td&gt;Lecture Preperation (PCRS)&lt;&#x2F;td&gt;&lt;td&gt;5% (best 10 of 11)&lt;&#x2F;td&gt;&lt;td&gt;Tuesday before 10:00am (weeks 2-12)&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;Lab Exercises&lt;&#x2F;td&gt;&lt;td&gt;10% (best 10 of 11)&lt;&#x2F;td&gt;&lt;td&gt;Fridays before 6:30pm (weeks 1-11)&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;A1&lt;&#x2F;td&gt;&lt;td&gt;5%&lt;&#x2F;td&gt;&lt;td&gt;Thursday 26 January before 6:30pm&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;A2&lt;&#x2F;td&gt;&lt;td&gt;10%&lt;&#x2F;td&gt;&lt;td&gt;Wednesday 15 Febuary before 6:30pm&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;Midterm Test&lt;&#x2F;td&gt;&lt;td&gt;10%&lt;&#x2F;td&gt;&lt;td&gt;Tues 28 Febuary during class time&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;A3&lt;&#x2F;td&gt;&lt;td&gt;10%&lt;&#x2F;td&gt;&lt;td&gt;Wednesday 15 March before 6:30pm&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;A4&lt;&#x2F;td&gt;&lt;td&gt;9%&lt;&#x2F;td&gt;&lt;td&gt;Wednesday 5 April before 6:30pm&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;Research Surverys&lt;&#x2F;td&gt;&lt;td&gt;1% (0.1% $\times$ 10 surveys)&lt;&#x2F;td&gt;&lt;td&gt;Fridays before 6:30pm (weeks 2-11)&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;Final Exam&lt;&#x2F;td&gt;&lt;td&gt;40%&lt;&#x2F;td&gt;&lt;td&gt;Minimum grade of 40% required to pass this course&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;&#x2F;tbody&gt;&lt;&#x2F;table&gt;
+&lt;h2 id=&quot;pcrs&quot;&gt;PCRS&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;No PCRS this week!&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;lecture-slides&quot;&gt;Lecture Slides&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Some of the Unix command lines
+&lt;ul&gt;
+&lt;li&gt;ls: List the names of the files in the particular Unix directory&lt;&#x2F;li&gt;
+&lt;li&gt;wc: prints the word, byte, and count of the new file&lt;&#x2F;li&gt;
+&lt;li&gt;sort: used for sorting a complete file by arranging the records in specific order&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;shells&quot;&gt;Shells&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;A &lt;strong&gt;shell&lt;&#x2F;strong&gt; is a program that acts as an interface between human and your computer&#x27;s operating system
+&lt;ul&gt;
+&lt;li&gt;$ is a shell &lt;strong&gt;prompt&lt;&#x2F;strong&gt; &lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;wc hello.c&lt;&#x2F;code&gt; is a command for the shell&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;wc&lt;&#x2F;code&gt; is the name of executable file (aka program)&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;hello.c&lt;&#x2F;code&gt; is the arguement to the program&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;The shell:
+&lt;ul&gt;
+&lt;li&gt;Finds the executable program on your computer&lt;&#x2F;li&gt;
+&lt;li&gt;interprets the args&lt;&#x2F;li&gt;
+&lt;li&gt;Runs program with given args&lt;&#x2F;li&gt;
+&lt;li&gt;Typically have built-in commands that are not exectuable
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;echo, test&lt;&#x2F;code&gt; &lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;std-output-std-input-and-piping&quot;&gt;Std output, Std input, and piping&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Std Output: default place where program prints text&lt;&#x2F;li&gt;
+&lt;li&gt;Std Input: default place where program read in text (user input)&lt;&#x2F;li&gt;
+&lt;li&gt;We can redirect these using &amp;gt; or &amp;lt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;filesystem&quot;&gt;Filesystem&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Inode: DS that contains information about a file
+&lt;ul&gt;
+&lt;li&gt;Metadata&lt;&#x2F;li&gt;
+&lt;li&gt;where it is stored&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;Directory: special type of file that contains &lt;strong&gt;directory entries&lt;&#x2F;strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Directory entry: mapping from file name to inode&lt;&#x2F;li&gt;
+&lt;li&gt;can be nested&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;root directory&lt;&#x2F;strong&gt; is at the top of the hierarchy, simply named &lt;code&gt;&#x2F;&lt;&#x2F;code&gt; &lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;file-permissions&quot;&gt;File Permissions&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;3 levels of user access
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;user&lt;&#x2F;strong&gt;: who owns the file&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;groups&lt;&#x2F;strong&gt;: users that are associated with&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;other&lt;&#x2F;strong&gt; users&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;3 types of access&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Type&lt;&#x2F;th&gt;&lt;th&gt;For a file&lt;&#x2F;th&gt;&lt;th&gt;For a directory&lt;&#x2F;th&gt;&lt;&#x2F;tr&gt;&lt;&#x2F;thead&gt;&lt;tbody&gt;
+&lt;tr&gt;&lt;td&gt;read&lt;&#x2F;td&gt;&lt;td&gt;View contents of file&lt;&#x2F;td&gt;&lt;td&gt;Add&#x2F;remove files from directory&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;write&lt;&#x2F;td&gt;&lt;td&gt;Edit&#x2F;delete file&lt;&#x2F;td&gt;&lt;td&gt;Add&#x2F;remove files from directory&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;execute&lt;&#x2F;td&gt;&lt;td&gt;Execute a file&lt;&#x2F;td&gt;&lt;td&gt;&amp;quot;Pass through&amp;quot; directory to access subdirectories&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;&#x2F;tbody&gt;&lt;&#x2F;table&gt;
+&lt;ul&gt;
+&lt;li&gt;Inspect permission using &lt;code&gt;ls -l&lt;&#x2F;code&gt; &lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;pre style=&quot;background-color:#282828;color:#fdf4c1aa;&quot;&gt;&lt;code&gt;&lt;span&gt;-rwx--x--x 1 liudavid instrs 16880 Jan 4 13:10 hello  
+&lt;&#x2F;span&gt;&lt;span&gt;-rw------- 1 liudavid instrs 166 Jan 4 12:21 hello.c
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;ul&gt;
+&lt;li&gt;change permission of file using &lt;code&gt;chmod MODE FILE ...&lt;&#x2F;code&gt;
+&lt;ul&gt;
+&lt;li&gt;Three numbers between 0 and 7, for user&#x2F;group&#x2F;other
+&lt;ul&gt;
+&lt;li&gt;Each number represents three bits $(b_{0}b_{1}b_{2})_{2}$ where each bit is r&#x2F;w&#x2F;x&lt;&#x2F;li&gt;
+&lt;li&gt;Ex: &lt;code&gt;chmod 741 hello&lt;&#x2F;code&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;other way to do it is &lt;code&gt;&amp;lt;u&#x2F;g&#x2F;o&amp;gt;&amp;lt;+&#x2F;-&amp;gt;&amp;lt;r&#x2F;w&#x2F;x&amp;gt;&lt;&#x2F;code&gt; 
+&lt;ul&gt;
+&lt;li&gt;Ex:&lt;code&gt;chmod u+x hello&lt;&#x2F;code&gt; or &lt;code&gt;chmod g-w hello&lt;&#x2F;code&gt; &lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;labs&quot;&gt;Labs&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;nothing much here, other than using &amp;lt;, &amp;gt; and piping &lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;hr &#x2F;&gt;
+&lt;h1 id=&quot;week-2&quot;&gt;Week 2&lt;&#x2F;h1&gt;
+&lt;h2 id=&quot;pcrs-1&quot;&gt;PCRS&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Pointer: address holding variable&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;pre data-lang=&quot;c&quot; style=&quot;background-color:#282828;color:#fdf4c1aa;&quot; class=&quot;language-c &quot;&gt;&lt;code class=&quot;language-c&quot; data-lang=&quot;c&quot;&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;int &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fe8019;&quot;&gt;*&lt;&#x2F;span&gt;&lt;span&gt;pt; &lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#928374;&quot;&gt;&#x2F;&#x2F; not a dereference, but a declaration
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;ul&gt;
+&lt;li&gt;Passing arrays as variables
+&lt;ul&gt;
+&lt;li&gt;Make sure to pass the length as well &lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;int pointer: 8 byte
+&lt;ul&gt;
+&lt;li&gt;when you add $+1$, increments by 4 byte&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;char pointer: 1 byte
+&lt;ul&gt;
+&lt;li&gt;when you add  $+1$, increments by 1 byte&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;Both subtraction and addition works for pointer arithmetic&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;lecture&quot;&gt;Lecture&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Array: &lt;strong&gt;contigously&lt;&#x2F;strong&gt; allocated set of objects of a fixed type. 
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;int nums[4]&lt;&#x2F;code&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;A &lt;strong&gt;pointer&lt;&#x2F;strong&gt; is an object whose value proviudes a reference to an object of different type&lt;&#x2F;li&gt;
+&lt;li&gt;Two key operators
+&lt;ul&gt;
+&lt;li&gt;*(dereference) &lt;&#x2F;li&gt;
+&lt;li&gt;&amp;amp;(address of)&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;worksheet&quot;&gt;Worksheet&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;normal stack calls with pointers. These are easy. &lt;&#x2F;li&gt;
+&lt;li&gt;Wait till malloc comes in . . . &lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;hr &#x2F;&gt;
+&lt;h1 id=&quot;week-3&quot;&gt;Week 3&lt;&#x2F;h1&gt;
+&lt;h2 id=&quot;pcrs-2&quot;&gt;PCRS&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Memory Model: a single vast array that houses all of our data&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;The array looks like the table below
+![[Screenshot 2023-02-27 at 12.57.06 PM.png]]&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;Look at the general code below: &lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;pre data-lang=&quot;c&quot; style=&quot;background-color:#282828;color:#fdf4c1aa;&quot; class=&quot;language-c &quot;&gt;&lt;code class=&quot;language-c&quot; data-lang=&quot;c&quot;&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;int &lt;&#x2F;span&gt;&lt;span style=&quot;color:#8ec07c;&quot;&gt;sum&lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;int &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;a&lt;&#x2F;span&gt;&lt;span&gt;, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;int &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;b&lt;&#x2F;span&gt;&lt;span&gt;) {
+&lt;&#x2F;span&gt;&lt;span&gt;	&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;int&lt;&#x2F;span&gt;&lt;span&gt; i;
+&lt;&#x2F;span&gt;&lt;span&gt;	i &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fe8019;&quot;&gt;=&lt;&#x2F;span&gt;&lt;span&gt; a &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fe8019;&quot;&gt;+&lt;&#x2F;span&gt;&lt;span&gt; b;
+&lt;&#x2F;span&gt;&lt;span&gt;	&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;return&lt;&#x2F;span&gt;&lt;span&gt; i;
+&lt;&#x2F;span&gt;&lt;span&gt;}
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;int&lt;&#x2F;span&gt;&lt;span&gt; z;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;int &lt;&#x2F;span&gt;&lt;span style=&quot;color:#8ec07c;&quot;&gt;main&lt;&#x2F;span&gt;&lt;span&gt;() {
+&lt;&#x2F;span&gt;&lt;span&gt;	z &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fe8019;&quot;&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;sum(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d3869b;&quot;&gt;1&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d3869b;&quot;&gt;3&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;)&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;	chat &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fe8019;&quot;&gt;*&lt;&#x2F;span&gt;&lt;span&gt;c_ptr &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fe8019;&quot;&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;Hi!&amp;quot;&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;	&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fabd2f;&quot;&gt;printf&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;Hi!&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;)&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;	
+&lt;&#x2F;span&gt;&lt;span&gt;	&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;return &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d3869b;&quot;&gt;0&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;}
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;ul&gt;
+&lt;li&gt;once compiled, the code is stored in the code &lt;&#x2F;li&gt;
+&lt;li&gt;function calls are stored in Stack
+&lt;ul&gt;
+&lt;li&gt;remove in LIFO fashion&lt;&#x2F;li&gt;
+&lt;li&gt;Ex: &lt;code&gt;sum&lt;&#x2F;code&gt; call&lt;&#x2F;li&gt;
+&lt;li&gt;store all local var + arguements
+&lt;ul&gt;
+&lt;li&gt;allocate the stack frame (located on top of the stack)
+&lt;ul&gt;
+&lt;li&gt;above main&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;int a int b int i&lt;&#x2F;code&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;once used, pop the stack frame&lt;&#x2F;li&gt;
+&lt;li&gt;now the stack could be used for another call&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;top of the stack is always dedicated for the function that is currently running&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;local variables are only accessible once the function is active&lt;&#x2F;strong&gt; &lt;&#x2F;li&gt;
+&lt;li&gt;once stack frame is deallocated, the variable is no longer valid memory location&lt;&#x2F;li&gt;
+&lt;li&gt;Single stack frame stores local variables and arguments for one function call&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;Global
+&lt;ul&gt;
+&lt;li&gt;when variable is declared outside of any function scope&lt;&#x2F;li&gt;
+&lt;li&gt;can be accessed by any function&lt;&#x2F;li&gt;
+&lt;li&gt;stored in global variable segment&lt;&#x2F;li&gt;
+&lt;li&gt;allocated for the entire program&lt;&#x2F;li&gt;
+&lt;li&gt;Also holds &lt;strong&gt;string literals&lt;&#x2F;strong&gt; 
+&lt;ul&gt;
+&lt;li&gt;take a look at &lt;code&gt;&amp;quot;Hi&amp;quot;&lt;&#x2F;code&gt; &lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;Heaps
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;malloc&lt;&#x2F;code&gt;: allows us to allocated memory while the program runs&lt;&#x2F;li&gt;
+&lt;li&gt;Dynamically allocated memory should always last more than the function it is being called at&lt;&#x2F;li&gt;
+&lt;li&gt;never access variables in stack (after it has been deallocated)&lt;&#x2F;li&gt;
+&lt;li&gt;Use both stack and heap wisely &lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;pre data-lang=&quot;c&quot; style=&quot;background-color:#282828;color:#fdf4c1aa;&quot; class=&quot;language-c &quot;&gt;&lt;code class=&quot;language-c&quot; data-lang=&quot;c&quot;&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;#include &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;lt;stdlib.h&amp;gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;#include &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;lt;stdio.h&amp;gt;
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;int &lt;&#x2F;span&gt;&lt;span style=&quot;color:#8ec07c;&quot;&gt;main&lt;&#x2F;span&gt;&lt;span&gt;() {
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;float &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fe8019;&quot;&gt;*&lt;&#x2F;span&gt;&lt;span&gt;rainfall &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fe8019;&quot;&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d3869b;&quot;&gt;NULL&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#928374;&quot;&gt;&#x2F;&#x2F; Allocate space for a single floating point number and assign its location to the pointer rainfall.
+&lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#928374;&quot;&gt;&#x2F;&#x2F; Submitted code below
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;float&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fe8019;&quot;&gt;*&lt;&#x2F;span&gt;&lt;span&gt; ptr &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fe8019;&quot;&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fabd2f;&quot;&gt;malloc&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fe8019;&quot;&gt;sizeof&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;float&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;))&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;    rainfall &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fe8019;&quot;&gt;=&lt;&#x2F;span&gt;&lt;span&gt; ptr;
+&lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#928374;&quot;&gt;&#x2F;&#x2F; Submitted code above
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fe8019;&quot;&gt;*&lt;&#x2F;span&gt;&lt;span&gt;rainfall &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fe8019;&quot;&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d3869b;&quot;&gt;42.6&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;return &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d3869b;&quot;&gt;0&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;}
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;ul&gt;
+&lt;li&gt;OS 
+&lt;ul&gt;
+&lt;li&gt;cannot be accessed&lt;&#x2F;li&gt;
+&lt;li&gt;will get &lt;code&gt;segmentation fault&lt;&#x2F;code&gt; &lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;Anything close or is 0 is a &lt;strong&gt;buffer&lt;&#x2F;strong&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;Type conversions
+&lt;ul&gt;
+&lt;li&gt;converting string to int &lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;char *s = &amp;quot;17&amp;quot;;&lt;&#x2F;code&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;int i = strtol(s, NULL, 10);&lt;&#x2F;code&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;pre data-lang=&quot;c&quot; style=&quot;background-color:#282828;color:#fdf4c1aa;&quot; class=&quot;language-c &quot;&gt;&lt;code class=&quot;language-c&quot; data-lang=&quot;c&quot;&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;#include &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;lt;stdio.h&amp;gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;#include &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;lt;stdlib.h&amp;gt;
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;int &lt;&#x2F;span&gt;&lt;span style=&quot;color:#8ec07c;&quot;&gt;main&lt;&#x2F;span&gt;&lt;span&gt;() {
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#928374;&quot;&gt;&#x2F;&#x2F;char *s = &amp;quot;17&amp;quot;;
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;char &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fe8019;&quot;&gt;*&lt;&#x2F;span&gt;&lt;span&gt;s &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fe8019;&quot;&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;  -17&amp;quot;&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;int&lt;&#x2F;span&gt;&lt;span&gt; i &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fe8019;&quot;&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fabd2f;&quot;&gt;strtol&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;(s, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d3869b;&quot;&gt;NULL&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d3869b;&quot;&gt;10&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;)&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fabd2f;&quot;&gt;printf&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;i has the value &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;%d&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;\n&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;, i)&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;    s &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fe8019;&quot;&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;  -17 other junk.&amp;quot;&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;char &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fe8019;&quot;&gt;*&lt;&#x2F;span&gt;&lt;span&gt;leftover;
+&lt;&#x2F;span&gt;&lt;span&gt;    i &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fe8019;&quot;&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fabd2f;&quot;&gt;strtol&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;(s, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fe8019;&quot;&gt;&amp;amp;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;leftover, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d3869b;&quot;&gt;10&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;)&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fabd2f;&quot;&gt;printf&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;i has the value &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;%d&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;\n&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;, i)&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fabd2f;&quot;&gt;printf&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;leftover has the value &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;%s&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;\n&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;, leftover)&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;return &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d3869b;&quot;&gt;0&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;}
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;ul&gt;
+&lt;li&gt;We can see here we need parameter string to parse, the char pointer to which it locates the leftover string, and the base conversion&lt;&#x2F;li&gt;
+&lt;li&gt;Understand command line arguements
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;argc, char** argv&lt;&#x2F;code&gt; &lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;hr &#x2F;&gt;
+&lt;h2 id=&quot;lecture-slides-1&quot;&gt;Lecture Slides&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Pitfalls with dynmaic memory
+&lt;ul&gt;
+&lt;li&gt;Memory leak: some heap-allocated memory is never freed&lt;&#x2F;li&gt;
+&lt;li&gt;user-after-free: when code deferences a pointer that has been freed&lt;&#x2F;li&gt;
+&lt;li&gt;Double free: when free is called twice on same pointer
+&lt;ul&gt;
+&lt;li&gt;leads to undefined behavior&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;additional-notes&quot;&gt;Additional Notes&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Stack diagrams make sure:
+&lt;ul&gt;
+&lt;li&gt;you can follow the code + alter it to fix it&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;pointer to pointer to int is 8 bytes&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;hr &#x2F;&gt;
+&lt;h1 id=&quot;week-4&quot;&gt;Week 4&lt;&#x2F;h1&gt;
+&lt;h2 id=&quot;pcrs-3&quot;&gt;PCRS&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;strings&quot;&gt;Strings&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;C string: Character array that has a null character immediately after the text
+&lt;ul&gt;
+&lt;li&gt;Its just char array with a null character at the end&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;\0&lt;&#x2F;code&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;here are some examples&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;pre data-lang=&quot;c&quot; style=&quot;background-color:#282828;color:#fdf4c1aa;&quot; class=&quot;language-c &quot;&gt;&lt;code class=&quot;language-c&quot; data-lang=&quot;c&quot;&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;#include &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;lt;stdio.h&amp;gt;
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;int &lt;&#x2F;span&gt;&lt;span style=&quot;color:#8ec07c;&quot;&gt;main&lt;&#x2F;span&gt;&lt;span&gt;() {
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;char&lt;&#x2F;span&gt;&lt;span&gt; text[&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d3869b;&quot;&gt;20&lt;&#x2F;span&gt;&lt;span&gt;] &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fe8019;&quot;&gt;= &lt;&#x2F;span&gt;&lt;span&gt;{&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;#39;h&amp;#39;&lt;&#x2F;span&gt;&lt;span&gt;, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;#39;e&amp;#39;&lt;&#x2F;span&gt;&lt;span&gt;, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;#39;l&amp;#39;&lt;&#x2F;span&gt;&lt;span&gt;, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;#39;l&amp;#39;&lt;&#x2F;span&gt;&lt;span&gt;, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;#39;o&amp;#39;&lt;&#x2F;span&gt;&lt;span&gt;, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;#39;\0&amp;#39;&lt;&#x2F;span&gt;&lt;span&gt;};
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#928374;&quot;&gt;&#x2F;&#x2F; This does the same thing
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#928374;&quot;&gt;&#x2F;&#x2F;char text[20] = &amp;quot;hello&amp;quot;;
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#928374;&quot;&gt;&#x2F;&#x2F; stuff like text[5] = &amp;quot;hello&amp;quot; is not a string
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#928374;&quot;&gt;&#x2F;&#x2F; since it does not have space for null terminator
+&lt;&#x2F;span&gt;&lt;span&gt;  
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fabd2f;&quot;&gt;printf&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;%s&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;\n&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;, text)&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;	&lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#928374;&quot;&gt;&#x2F;&#x2F; You can also do this
+&lt;&#x2F;span&gt;&lt;span&gt;	&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;char&lt;&#x2F;span&gt;&lt;span&gt; text[] &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fe8019;&quot;&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;hello&amp;quot;
+&lt;&#x2F;span&gt;&lt;span&gt;	&lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#928374;&quot;&gt;&#x2F;&#x2F; in this case, length of text is 6, hello + &#x2F;0
+&lt;&#x2F;span&gt;&lt;span&gt;	&lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#928374;&quot;&gt;&#x2F;&#x2F; this does not mean size can change during program running
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#928374;&quot;&gt;&#x2F;&#x2F; But text1 is a pointer to a string literal
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#928374;&quot;&gt;&#x2F;&#x2F; Strong literal is text that cannot be changed
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;char &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fe8019;&quot;&gt;*&lt;&#x2F;span&gt;&lt;span&gt;text1 &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fe8019;&quot;&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;hello&amp;quot;&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fabd2f;&quot;&gt;printf&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;%s&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;\n&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;, text1)&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#928374;&quot;&gt;&#x2F;&#x2F; We can change a character in text but not text1    
+&lt;&#x2F;span&gt;&lt;span&gt;    text[&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d3869b;&quot;&gt;0&lt;&#x2F;span&gt;&lt;span&gt;] &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fe8019;&quot;&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;#39;j&amp;#39;&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fabd2f;&quot;&gt;printf&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;%s&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;\n&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;, text)&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#928374;&quot;&gt;&#x2F;&#x2F; See what happens if we uncomment the next line and compile
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#928374;&quot;&gt;&#x2F;&#x2F; text1[3] = &amp;#39;X&amp;#39;;
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;return &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d3869b;&quot;&gt;0&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;}
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;ul&gt;
+&lt;li&gt;sizeof is a &lt;em&gt;compile time&lt;&#x2F;em&gt; operation&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;pre data-lang=&quot;c&quot; style=&quot;background-color:#282828;color:#fdf4c1aa;&quot; class=&quot;language-c &quot;&gt;&lt;code class=&quot;language-c&quot; data-lang=&quot;c&quot;&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;#include &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;lt;stdio.h&amp;gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;#include &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;lt;string.h&amp;gt;
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;int &lt;&#x2F;span&gt;&lt;span style=&quot;color:#8ec07c;&quot;&gt;main&lt;&#x2F;span&gt;&lt;span&gt;() {
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;char&lt;&#x2F;span&gt;&lt;span&gt; weekday[&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d3869b;&quot;&gt;10&lt;&#x2F;span&gt;&lt;span&gt;] &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fe8019;&quot;&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;Monday&amp;quot;&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#928374;&quot;&gt;&#x2F;&#x2F; looks at number of bytes occupied by array, in this case it is 10
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fabd2f;&quot;&gt;printf&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;Size of string: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;%lu&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;\n&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fe8019;&quot;&gt;sizeof&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;(weekday))&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#928374;&quot;&gt;&#x2F;&#x2F; counts the number of character before null terminator
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fabd2f;&quot;&gt;printf&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;Length of string: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;%lu&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;\n&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fabd2f;&quot;&gt;strlen&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;(weekday))&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;return &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d3869b;&quot;&gt;0&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;}
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h4 id=&quot;copying-strings&quot;&gt;Copying Strings&lt;&#x2F;h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;strcpy(char* s1, char* s2)&lt;&#x2F;code&gt;
+&lt;ul&gt;
+&lt;li&gt;copies the characters from string s2 into the beginning of string s1&lt;&#x2F;li&gt;
+&lt;li&gt;s2 is required to be string
+&lt;ul&gt;
+&lt;li&gt;string literal or char array with null term&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;strncpy(char *s1, char*s2, int n)&lt;&#x2F;code&gt;
+&lt;ul&gt;
+&lt;li&gt;n indicates maximum parameter&lt;&#x2F;li&gt;
+&lt;li&gt;max num n including null terminator&lt;&#x2F;li&gt;
+&lt;li&gt;to be safe, add the null termaintor add the end&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;pre data-lang=&quot;c&quot; style=&quot;background-color:#282828;color:#fdf4c1aa;&quot; class=&quot;language-c &quot;&gt;&lt;code class=&quot;language-c&quot; data-lang=&quot;c&quot;&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;#include &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;lt;stdio.h&amp;gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;#include &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;lt;string.h&amp;gt;
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;int &lt;&#x2F;span&gt;&lt;span style=&quot;color:#8ec07c;&quot;&gt;main&lt;&#x2F;span&gt;&lt;span&gt;() {
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;char&lt;&#x2F;span&gt;&lt;span&gt; s1[&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d3869b;&quot;&gt;5&lt;&#x2F;span&gt;&lt;span&gt;];
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;char&lt;&#x2F;span&gt;&lt;span&gt; s2[&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d3869b;&quot;&gt;32&lt;&#x2F;span&gt;&lt;span&gt;] &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fe8019;&quot;&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;University of&amp;quot;&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#928374;&quot;&gt;&#x2F;&#x2F; This is unsafe because s1 may not have enough space
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#928374;&quot;&gt;&#x2F;&#x2F; to hold all the characters copied from s2.
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#928374;&quot;&gt;&#x2F;&#x2F;strcpy(s1, s2);
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#928374;&quot;&gt;&#x2F;&#x2F; This doesn&amp;#39;t necessarily null-terminate s1 if there isn&amp;#39;t space.
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fabd2f;&quot;&gt;strncpy&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;(s1, s2, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fe8019;&quot;&gt;sizeof&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;(s1))&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#928374;&quot;&gt;&#x2F;&#x2F; So we explicitly terminate s1 by setting a null-terminator.
+&lt;&#x2F;span&gt;&lt;span&gt;    s1[&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d3869b;&quot;&gt;4&lt;&#x2F;span&gt;&lt;span&gt;] &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fe8019;&quot;&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;#39;\0&amp;#39;&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fabd2f;&quot;&gt;printf&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;%s&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;\n&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;, s1)&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fabd2f;&quot;&gt;printf&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;%s&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;\n&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;, s2)&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;return &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d3869b;&quot;&gt;0&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;}
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h4 id=&quot;string-concatenation&quot;&gt;String concatenation&lt;&#x2F;h4&gt;
+&lt;ul&gt;
+&lt;li&gt;strcat(char* s1, char* s2)
+&lt;ul&gt;
+&lt;li&gt;unsafe function&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;strncat(char* s1, char* s2, int n)&lt;&#x2F;code&gt;
+&lt;ul&gt;
+&lt;li&gt;n indicates maximum number of char not including the null terminator&lt;&#x2F;li&gt;
+&lt;li&gt;this function always add the null terminator&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;pre data-lang=&quot;c&quot; style=&quot;background-color:#282828;color:#fdf4c1aa;&quot; class=&quot;language-c &quot;&gt;&lt;code class=&quot;language-c&quot; data-lang=&quot;c&quot;&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;#include &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;lt;stdio.h&amp;gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;#include &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;lt;string.h&amp;gt;
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;int &lt;&#x2F;span&gt;&lt;span style=&quot;color:#8ec07c;&quot;&gt;main&lt;&#x2F;span&gt;&lt;span&gt;() {
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;char&lt;&#x2F;span&gt;&lt;span&gt; s1[&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d3869b;&quot;&gt;30&lt;&#x2F;span&gt;&lt;span&gt;];
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;char&lt;&#x2F;span&gt;&lt;span&gt; s2[&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d3869b;&quot;&gt;14&lt;&#x2F;span&gt;&lt;span&gt;] &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fe8019;&quot;&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;University of&amp;quot;&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;char&lt;&#x2F;span&gt;&lt;span&gt; s3[&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d3869b;&quot;&gt;15&lt;&#x2F;span&gt;&lt;span&gt;] &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fe8019;&quot;&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot; C Programming&amp;quot;&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fabd2f;&quot;&gt;strcpy&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;(s1, s2)&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fabd2f;&quot;&gt;strncat&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;(s1, s3, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fe8019;&quot;&gt;sizeof&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;(s1) &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fe8019;&quot;&gt;- &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fabd2f;&quot;&gt;strlen&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;(s1) &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fe8019;&quot;&gt;- &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d3869b;&quot;&gt;1&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;)&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fabd2f;&quot;&gt;printf&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;%s&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;\n&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;, s1)&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;return &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d3869b;&quot;&gt;0&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;}
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h4 id=&quot;searching-with-strings&quot;&gt;Searching with Strings&lt;&#x2F;h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;char* strchr(const char* s, int c)&lt;&#x2F;code&gt;
+&lt;ul&gt;
+&lt;li&gt;returns a pointer to the character that was found&lt;&#x2F;li&gt;
+&lt;li&gt;or null if was not found in the string&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;char *strstr(const char *s1, const char *s2)&lt;&#x2F;code&gt;
+&lt;ul&gt;
+&lt;li&gt;if s2 is found in s1, returns the pointer to character of s1 that begins the match with s2&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;pre data-lang=&quot;c&quot; style=&quot;background-color:#282828;color:#fdf4c1aa;&quot; class=&quot;language-c &quot;&gt;&lt;code class=&quot;language-c&quot; data-lang=&quot;c&quot;&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;#include &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;lt;stdio.h&amp;gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;#include &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;lt;string.h&amp;gt;
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;int &lt;&#x2F;span&gt;&lt;span style=&quot;color:#8ec07c;&quot;&gt;main&lt;&#x2F;span&gt;&lt;span&gt;() {
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;char&lt;&#x2F;span&gt;&lt;span&gt; s1[&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d3869b;&quot;&gt;30&lt;&#x2F;span&gt;&lt;span&gt;] &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fe8019;&quot;&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;University of C Programming&amp;quot;&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;char &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fe8019;&quot;&gt;*&lt;&#x2F;span&gt;&lt;span&gt;p;
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#928374;&quot;&gt;&#x2F;&#x2F; find the index of the first &amp;#39;v&amp;#39;
+&lt;&#x2F;span&gt;&lt;span&gt;    p &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fe8019;&quot;&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fabd2f;&quot;&gt;strchr&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;(s1, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;#39;v&amp;#39;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;)&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;if &lt;&#x2F;span&gt;&lt;span&gt;(p &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fe8019;&quot;&gt;== &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d3869b;&quot;&gt;NULL&lt;&#x2F;span&gt;&lt;span&gt;) {
+&lt;&#x2F;span&gt;&lt;span&gt;        &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fabd2f;&quot;&gt;printf&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;Character not found\n&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;)&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;    } &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;else &lt;&#x2F;span&gt;&lt;span&gt;{
+&lt;&#x2F;span&gt;&lt;span&gt;        &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fabd2f;&quot;&gt;printf&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;Character found at index &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;%ld&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;\n&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;, p &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fe8019;&quot;&gt;-&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt; s1)&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;    }
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#928374;&quot;&gt;&#x2F;&#x2F; find the first token (up to the first space)
+&lt;&#x2F;span&gt;&lt;span&gt;    p &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fe8019;&quot;&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fabd2f;&quot;&gt;strchr&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;(s1, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;#39; &amp;#39;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;)&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;if &lt;&#x2F;span&gt;&lt;span&gt;(p &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fe8019;&quot;&gt;!= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d3869b;&quot;&gt;NULL&lt;&#x2F;span&gt;&lt;span&gt;) {
+&lt;&#x2F;span&gt;&lt;span&gt;        &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fe8019;&quot;&gt;*&lt;&#x2F;span&gt;&lt;span&gt;p &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fe8019;&quot;&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;#39;\0&amp;#39;&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;    }
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fabd2f;&quot;&gt;printf&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;%s&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;\n&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;, s1)&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;return &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d3869b;&quot;&gt;0&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;}
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h3 id=&quot;structs&quot;&gt;Structs&lt;&#x2F;h3&gt;
+&lt;h4 id=&quot;using-structs-in-functions&quot;&gt;Using structs in functions&lt;&#x2F;h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Difference between struct and array&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;&lt;&#x2F;th&gt;&lt;th&gt;array&lt;&#x2F;th&gt;&lt;th&gt;structure&lt;&#x2F;th&gt;&lt;&#x2F;tr&gt;&lt;&#x2F;thead&gt;&lt;tbody&gt;
+&lt;tr&gt;&lt;td&gt;data of some type&lt;&#x2F;td&gt;&lt;td&gt;yes&lt;&#x2F;td&gt;&lt;td&gt;not required&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;declaration details&lt;&#x2F;td&gt;&lt;td&gt;type and number of elements&lt;&#x2F;td&gt;&lt;td&gt;types of members&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;access via . . .&lt;&#x2F;td&gt;&lt;td&gt;index notation&lt;&#x2F;td&gt;&lt;td&gt;dot notation&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;&#x2F;tbody&gt;&lt;&#x2F;table&gt;
+&lt;pre data-lang=&quot;c&quot; style=&quot;background-color:#282828;color:#fdf4c1aa;&quot; class=&quot;language-c &quot;&gt;&lt;code class=&quot;language-c&quot; data-lang=&quot;c&quot;&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;#include &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;lt;stdio.h&amp;gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;#include &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;lt;string.h&amp;gt;
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;int &lt;&#x2F;span&gt;&lt;span style=&quot;color:#8ec07c;&quot;&gt;main&lt;&#x2F;span&gt;&lt;span&gt;() {
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#928374;&quot;&gt;&#x2F;&#x2F; Note that &amp;quot;struct&amp;quot; is required whenever we declare
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#928374;&quot;&gt;&#x2F;&#x2F; a variable of a structure type:
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;struct &lt;&#x2F;span&gt;&lt;span style=&quot;color:#8ec07c;&quot;&gt;student &lt;&#x2F;span&gt;&lt;span&gt;{
+&lt;&#x2F;span&gt;&lt;span&gt;        &lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#928374;&quot;&gt;&#x2F;&#x2F; Members of struct student:
+&lt;&#x2F;span&gt;&lt;span&gt;        &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;char&lt;&#x2F;span&gt;&lt;span&gt; first_name[&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d3869b;&quot;&gt;20&lt;&#x2F;span&gt;&lt;span&gt;];
+&lt;&#x2F;span&gt;&lt;span&gt;        &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;char&lt;&#x2F;span&gt;&lt;span&gt; last_name[&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d3869b;&quot;&gt;20&lt;&#x2F;span&gt;&lt;span&gt;];
+&lt;&#x2F;span&gt;&lt;span&gt;        &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;int&lt;&#x2F;span&gt;&lt;span&gt; year;
+&lt;&#x2F;span&gt;&lt;span&gt;        &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;float&lt;&#x2F;span&gt;&lt;span&gt; gpa;
+&lt;&#x2F;span&gt;&lt;span&gt;    };
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#928374;&quot;&gt;&#x2F;&#x2F; good_student is of type &amp;quot;struct student&amp;quot;
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;struct&lt;&#x2F;span&gt;&lt;span&gt; student good_student;
+&lt;&#x2F;span&gt;&lt;span&gt;  
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#928374;&quot;&gt;&#x2F;&#x2F; Initialize the members of the struct using dot notation:
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fabd2f;&quot;&gt;strcpy&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;(good_student.first_name, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;Jo&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;)&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fabd2f;&quot;&gt;strcpy&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;(good_student.last_name, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;Smith&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;)&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;    good_student.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;year &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fe8019;&quot;&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d3869b;&quot;&gt;2&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;    good_student.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;gpa &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fe8019;&quot;&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d3869b;&quot;&gt;3.2&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;  
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#928374;&quot;&gt;&#x2F;&#x2F; Print the values of good_student&amp;#39;s members:
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fabd2f;&quot;&gt;printf&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;Name: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;%s %s&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;\n&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;,
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;           good_student.first_name, good_student.last_name)&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fabd2f;&quot;&gt;printf&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;Year: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;%d&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;. GPA: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;%.2f&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;\n&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;, good_student.year, good_student.gpa)&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;  
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;return &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d3869b;&quot;&gt;0&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;}
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h4 id=&quot;using-structs-in-functions-1&quot;&gt;Using Structs in Functions&lt;&#x2F;h4&gt;
+&lt;ul&gt;
+&lt;li&gt;we know the typical array calls of functions&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;pre data-lang=&quot;c&quot; style=&quot;background-color:#282828;color:#fdf4c1aa;&quot; class=&quot;language-c &quot;&gt;&lt;code class=&quot;language-c&quot; data-lang=&quot;c&quot;&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;#include &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;lt;stdio.h&amp;gt;
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#928374;&quot;&gt;&#x2F;* Changes the value of the 0th element of int array numbers
+&lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#928374;&quot;&gt; * to 80. 
+&lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#928374;&quot;&gt; *&#x2F;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;void &lt;&#x2F;span&gt;&lt;span style=&quot;color:#8ec07c;&quot;&gt;change&lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;int &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;numbers&lt;&#x2F;span&gt;&lt;span&gt;[]) {
+&lt;&#x2F;span&gt;&lt;span&gt;    numbers[&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d3869b;&quot;&gt;0&lt;&#x2F;span&gt;&lt;span&gt;] &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fe8019;&quot;&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d3869b;&quot;&gt;80&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;}
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;int &lt;&#x2F;span&gt;&lt;span style=&quot;color:#8ec07c;&quot;&gt;main&lt;&#x2F;span&gt;&lt;span&gt;() {
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;int&lt;&#x2F;span&gt;&lt;span&gt; my_array[&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d3869b;&quot;&gt;5&lt;&#x2F;span&gt;&lt;span&gt;];
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;    my_array[&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d3869b;&quot;&gt;0&lt;&#x2F;span&gt;&lt;span&gt;] &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fe8019;&quot;&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d3869b;&quot;&gt;40&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;change(my_array)&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#928374;&quot;&gt;&#x2F;&#x2F; The following prints 80 because &amp;quot;change&amp;quot; modifies the
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#928374;&quot;&gt;&#x2F;&#x2F; *original* array, since the array was *not* copied
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#928374;&quot;&gt;&#x2F;&#x2F; when passed as an argument:
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fabd2f;&quot;&gt;printf&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;Element at index 0: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;%d&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;\n&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;, my_array[&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d3869b;&quot;&gt;0&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;])&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;  
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;return &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d3869b;&quot;&gt;0&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;}
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;ul&gt;
+&lt;li&gt;However, you cannot do the same with structs
+&lt;ul&gt;
+&lt;li&gt;since passing strucut as parameter makes a new instance of that very struct (copies the struct)&lt;&#x2F;li&gt;
+&lt;li&gt;so, to send structs to function calls, we must send the pointers&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;pre data-lang=&quot;c&quot; style=&quot;background-color:#282828;color:#fdf4c1aa;&quot; class=&quot;language-c &quot;&gt;&lt;code class=&quot;language-c&quot; data-lang=&quot;c&quot;&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;#include &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;lt;stdio.h&amp;gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;#include &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;lt;string.h&amp;gt;
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;struct &lt;&#x2F;span&gt;&lt;span style=&quot;color:#8ec07c;&quot;&gt;student &lt;&#x2F;span&gt;&lt;span&gt;{
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;char&lt;&#x2F;span&gt;&lt;span&gt; first_name[&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d3869b;&quot;&gt;20&lt;&#x2F;span&gt;&lt;span&gt;];
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;char&lt;&#x2F;span&gt;&lt;span&gt; last_name[&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d3869b;&quot;&gt;20&lt;&#x2F;span&gt;&lt;span&gt;];
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;int&lt;&#x2F;span&gt;&lt;span&gt; year;
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;float&lt;&#x2F;span&gt;&lt;span&gt; gpa;
+&lt;&#x2F;span&gt;&lt;span&gt;};
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#928374;&quot;&gt;&#x2F;* This version of change() operates on a *copy* of struct s,
+&lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#928374;&quot;&gt;   not the original. This means that the print statement in main
+&lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#928374;&quot;&gt;   will print:
+&lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#928374;&quot;&gt;       first name if &amp;quot;Jo&amp;quot;
+&lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#928374;&quot;&gt;       GPA is 2.1
+&lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#928374;&quot;&gt;   ..since the original good_student is not modified by change().
+&lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#928374;&quot;&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#928374;&quot;&gt;====
+&lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#928374;&quot;&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#928374;&quot;&gt;void change(struct student s) {
+&lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#928374;&quot;&gt;    s.gpa = 4.0;
+&lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#928374;&quot;&gt;    strcpy(s.first_name, &amp;quot;Adam&amp;quot;);
+&lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#928374;&quot;&gt;}
+&lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#928374;&quot;&gt;*&#x2F;
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#928374;&quot;&gt;&#x2F;* Changes the values of a struct student&amp;#39;s members. 
+&lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#928374;&quot;&gt;   This function operates on the *original* struct, rather
+&lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#928374;&quot;&gt;   than on a copy of the struct. *&#x2F;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;void &lt;&#x2F;span&gt;&lt;span style=&quot;color:#8ec07c;&quot;&gt;change&lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;struct&lt;&#x2F;span&gt;&lt;span&gt; student &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fe8019;&quot;&gt;*&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;s&lt;&#x2F;span&gt;&lt;span&gt;) {
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fabd2f;&quot;&gt;strcpy&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;((&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fe8019;&quot;&gt;*&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;s).first_name, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;Adam&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;)&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;    (&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fe8019;&quot;&gt;*&lt;&#x2F;span&gt;&lt;span&gt;s).&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;gpa &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fe8019;&quot;&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d3869b;&quot;&gt;4.0&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;}
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;int &lt;&#x2F;span&gt;&lt;span style=&quot;color:#8ec07c;&quot;&gt;main&lt;&#x2F;span&gt;&lt;span&gt;() {
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;struct&lt;&#x2F;span&gt;&lt;span&gt; student good_student;
+&lt;&#x2F;span&gt;&lt;span&gt; 
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fabd2f;&quot;&gt;strcpy&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;(good_student.first_name, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;Jo&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;)&lt;&#x2F;span&gt;&lt;span&gt;; 
+&lt;&#x2F;span&gt;&lt;span&gt;    good_student.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;gpa &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fe8019;&quot;&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d3869b;&quot;&gt;2.1&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#928374;&quot;&gt;&#x2F;&#x2F; Passing address of good_student:
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;change(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fe8019;&quot;&gt;&amp;amp;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;good_student)&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;    
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fabd2f;&quot;&gt;printf&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;first name is &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;%s&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;\n&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;,
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;                good_student.first_name)&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fabd2f;&quot;&gt;printf&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;GPA is &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;%f&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;\n&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;, good_student.gpa)&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;  
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;return &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d3869b;&quot;&gt;0&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;}
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h4 id=&quot;pointers-to-structs&quot;&gt;Pointers to Structs&lt;&#x2F;h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Anything we know about pointers, applies to structs as well
+&lt;ul&gt;
+&lt;li&gt;declate pointers to point to struct&lt;&#x2F;li&gt;
+&lt;li&gt;change structs through their pointers&lt;&#x2F;li&gt;
+&lt;li&gt;pass pointers to structs as functions&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;pre data-lang=&quot;c&quot; style=&quot;background-color:#282828;color:#fdf4c1aa;&quot; class=&quot;language-c &quot;&gt;&lt;code class=&quot;language-c&quot; data-lang=&quot;c&quot;&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;#include &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;lt;stdio.h&amp;gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;#include &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;lt;string.h&amp;gt;
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;int &lt;&#x2F;span&gt;&lt;span style=&quot;color:#8ec07c;&quot;&gt;main&lt;&#x2F;span&gt;&lt;span&gt;() {
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;struct &lt;&#x2F;span&gt;&lt;span style=&quot;color:#8ec07c;&quot;&gt;student &lt;&#x2F;span&gt;&lt;span&gt;{
+&lt;&#x2F;span&gt;&lt;span&gt;        &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;char&lt;&#x2F;span&gt;&lt;span&gt; first_name[&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d3869b;&quot;&gt;20&lt;&#x2F;span&gt;&lt;span&gt;];
+&lt;&#x2F;span&gt;&lt;span&gt;        &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;char&lt;&#x2F;span&gt;&lt;span&gt; last_name[&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d3869b;&quot;&gt;20&lt;&#x2F;span&gt;&lt;span&gt;];
+&lt;&#x2F;span&gt;&lt;span&gt;        &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;int&lt;&#x2F;span&gt;&lt;span&gt; year;
+&lt;&#x2F;span&gt;&lt;span&gt;        &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;float&lt;&#x2F;span&gt;&lt;span&gt; gpa;
+&lt;&#x2F;span&gt;&lt;span&gt;    };
+&lt;&#x2F;span&gt;&lt;span&gt;  
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;struct&lt;&#x2F;span&gt;&lt;span&gt; student s;
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#928374;&quot;&gt;&#x2F;&#x2F; Cannot be dereferenced until it points to
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#928374;&quot;&gt;&#x2F;&#x2F; allocated space:
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;struct&lt;&#x2F;span&gt;&lt;span&gt; student &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fe8019;&quot;&gt;*&lt;&#x2F;span&gt;&lt;span&gt;p;
+&lt;&#x2F;span&gt;&lt;span&gt;  
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#928374;&quot;&gt;&#x2F;&#x2F; Initialize the members of s:
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fabd2f;&quot;&gt;strcpy&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;(s.first_name, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;Jo&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;)&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fabd2f;&quot;&gt;strcpy&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;(s.last_name, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;Smith&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;)&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;    s.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;year &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fe8019;&quot;&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d3869b;&quot;&gt;2&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;    s.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;gpa &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fe8019;&quot;&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d3869b;&quot;&gt;3.2&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;  
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#928374;&quot;&gt;&#x2F;&#x2F; p now points to the address of struct student s:
+&lt;&#x2F;span&gt;&lt;span&gt;    p &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fe8019;&quot;&gt;= &amp;amp;&lt;&#x2F;span&gt;&lt;span&gt;s;
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#928374;&quot;&gt;&#x2F;&#x2F; Dereference p to get the struct, then use the
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#928374;&quot;&gt;&#x2F;&#x2F; dot operator to access the &amp;quot;gpa&amp;quot; member:
+&lt;&#x2F;span&gt;&lt;span&gt;    (&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fe8019;&quot;&gt;*&lt;&#x2F;span&gt;&lt;span&gt;p).&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;gpa &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fe8019;&quot;&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d3869b;&quot;&gt;3.8&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;    p-&amp;gt;year &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fe8019;&quot;&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d3869b;&quot;&gt;1&lt;&#x2F;span&gt;&lt;span&gt;;    &lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#928374;&quot;&gt;&#x2F;&#x2F; this is the same as (*p).year = 1;
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fabd2f;&quot;&gt;strcpy&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;(p-&amp;gt;first_name, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;Henrick&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;)&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;  
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fabd2f;&quot;&gt;printf&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;Name: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;%s %s&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;\n&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;,
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;           s.first_name, s.last_name)&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fabd2f;&quot;&gt;printf&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;Year: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;%d&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;. GPA: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;%.2f&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;\n&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;, s.year, s.gpa)&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;  
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;return &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d3869b;&quot;&gt;0&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;}
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h3 id=&quot;dynmaic-memory-and-strings&quot;&gt;Dynmaic memory and strings&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;these are just normal pointer stuff&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;linked-structures-and-iteration&quot;&gt;Linked Structures and Iteration&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;simple linked list stuff&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;lecture-notes&quot;&gt;Lecture Notes&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;on the stack&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;pre data-lang=&quot;c&quot; style=&quot;background-color:#282828;color:#fdf4c1aa;&quot; class=&quot;language-c &quot;&gt;&lt;code class=&quot;language-c&quot; data-lang=&quot;c&quot;&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;char&lt;&#x2F;span&gt;&lt;span&gt; name[&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d3869b;&quot;&gt;32&lt;&#x2F;span&gt;&lt;span&gt;];
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;char&lt;&#x2F;span&gt;&lt;span&gt; greeting[&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d3869b;&quot;&gt;6&lt;&#x2F;span&gt;&lt;span&gt;] &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fe8019;&quot;&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;Hello&amp;quot;&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;ul&gt;
+&lt;li&gt;on the heap&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;pre data-lang=&quot;c&quot; style=&quot;background-color:#282828;color:#fdf4c1aa;&quot; class=&quot;language-c &quot;&gt;&lt;code class=&quot;language-c&quot; data-lang=&quot;c&quot;&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;char &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fe8019;&quot;&gt;*&lt;&#x2F;span&gt;&lt;span&gt;name &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fe8019;&quot;&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fabd2f;&quot;&gt;malloc&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fe8019;&quot;&gt;sizeof&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;char&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;) &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fe8019;&quot;&gt;* &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d3869b;&quot;&gt;32&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;)&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;ul&gt;
+&lt;li&gt;in read only &lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;pre data-lang=&quot;c&quot; style=&quot;background-color:#282828;color:#fdf4c1aa;&quot; class=&quot;language-c &quot;&gt;&lt;code class=&quot;language-c&quot; data-lang=&quot;c&quot;&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;char &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fe8019;&quot;&gt;*&lt;&#x2F;span&gt;&lt;span&gt;name &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fe8019;&quot;&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;David&amp;quot;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h2 id=&quot;additional-notes-1&quot;&gt;Additional Notes&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;if struct char is declared as string literal, you do not need to do strcpy, but only just assign it&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;hr &#x2F;&gt;
+&lt;h1 id=&quot;week-5&quot;&gt;Week 5&lt;&#x2F;h1&gt;
+&lt;h2 id=&quot;pcrs-4&quot;&gt;PCRS&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;writing-to-files&quot;&gt;Writing to Files&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;output_file = fopen(&amp;quot;myfile.txt&amp;quot;, &amp;quot;w&amp;quot; or &amp;quot;a&amp;quot;)&lt;&#x2F;code&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;w&lt;&#x2F;code&gt; means writing&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;a&lt;&#x2F;code&gt; means appending to end of the file&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;always do error checking&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;fprintf&lt;&#x2F;code&gt; writes the given input into the stream&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;pre data-lang=&quot;c&quot; style=&quot;background-color:#282828;color:#fdf4c1aa;&quot; class=&quot;language-c &quot;&gt;&lt;code class=&quot;language-c&quot; data-lang=&quot;c&quot;&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;#include &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;lt;stdio.h&amp;gt;
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;int &lt;&#x2F;span&gt;&lt;span style=&quot;color:#8ec07c;&quot;&gt;main&lt;&#x2F;span&gt;&lt;span&gt;() {
+&lt;&#x2F;span&gt;&lt;span&gt;    FILE &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fe8019;&quot;&gt;*&lt;&#x2F;span&gt;&lt;span&gt;output_file;
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;int&lt;&#x2F;span&gt;&lt;span&gt; error;
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;int&lt;&#x2F;span&gt;&lt;span&gt; total &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fe8019;&quot;&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d3869b;&quot;&gt;50&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;float&lt;&#x2F;span&gt;&lt;span&gt; small_number &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fe8019;&quot;&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d3869b;&quot;&gt;0.125&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;  
+&lt;&#x2F;span&gt;&lt;span&gt;    output_file &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fe8019;&quot;&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fabd2f;&quot;&gt;fopen&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;myfile.txt&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;w&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;)&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;if &lt;&#x2F;span&gt;&lt;span&gt;(output_file &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fe8019;&quot;&gt;== &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d3869b;&quot;&gt;NULL&lt;&#x2F;span&gt;&lt;span&gt;) {
+&lt;&#x2F;span&gt;&lt;span&gt;        &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fabd2f;&quot;&gt;fprintf&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;(stderr, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;Error opening file\n&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;)&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;        &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;return &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d3869b;&quot;&gt;1&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;    }
+&lt;&#x2F;span&gt;&lt;span&gt;  
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fabd2f;&quot;&gt;fprintf&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;(output_file, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;This will be the first line in the file\n&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;)&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fabd2f;&quot;&gt;fprintf&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;(output_file, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;The integer is &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;%d&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;\n&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;, total)&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fabd2f;&quot;&gt;fprintf&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;(output_file, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;The small float number is &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;%f&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;\n&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;, small_number)&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;  
+&lt;&#x2F;span&gt;&lt;span&gt;    error &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fe8019;&quot;&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fabd2f;&quot;&gt;fclose&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;(output_file)&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;if &lt;&#x2F;span&gt;&lt;span&gt;(error &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fe8019;&quot;&gt;!= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d3869b;&quot;&gt;0&lt;&#x2F;span&gt;&lt;span&gt;) {
+&lt;&#x2F;span&gt;&lt;span&gt;        &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fabd2f;&quot;&gt;fprintf&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;(stderr, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;fclose failed\n&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;)&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;        &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;return &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d3869b;&quot;&gt;1&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;    }
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;return &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d3869b;&quot;&gt;0&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;}
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h3 id=&quot;putting-it-all-together&quot;&gt;Putting it all together&lt;&#x2F;h3&gt;
+&lt;pre data-lang=&quot;c&quot; style=&quot;background-color:#282828;color:#fdf4c1aa;&quot; class=&quot;language-c &quot;&gt;&lt;code class=&quot;language-c&quot; data-lang=&quot;c&quot;&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;#include &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;lt;stdio.h&amp;gt;
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;int &lt;&#x2F;span&gt;&lt;span style=&quot;color:#8ec07c;&quot;&gt;main&lt;&#x2F;span&gt;&lt;span&gt;() {
+&lt;&#x2F;span&gt;&lt;span&gt;    FILE &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fe8019;&quot;&gt;*&lt;&#x2F;span&gt;&lt;span&gt;scores_file, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fe8019;&quot;&gt;*&lt;&#x2F;span&gt;&lt;span&gt;output_file;
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;int&lt;&#x2F;span&gt;&lt;span&gt; error, total;
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;char&lt;&#x2F;span&gt;&lt;span&gt; name[&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d3869b;&quot;&gt;81&lt;&#x2F;span&gt;&lt;span&gt;];
+&lt;&#x2F;span&gt;&lt;span&gt;  
+&lt;&#x2F;span&gt;&lt;span&gt;    scores_file &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fe8019;&quot;&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fabd2f;&quot;&gt;fopen&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;top10.txt&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;r&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;)&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;if &lt;&#x2F;span&gt;&lt;span&gt;(scores_file &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fe8019;&quot;&gt;== &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d3869b;&quot;&gt;NULL&lt;&#x2F;span&gt;&lt;span&gt;) {
+&lt;&#x2F;span&gt;&lt;span&gt;        &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fabd2f;&quot;&gt;fprintf&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;(stderr, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;Error opening input file\n&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;)&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;        &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;return &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d3869b;&quot;&gt;1&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;    }
+&lt;&#x2F;span&gt;&lt;span&gt;  
+&lt;&#x2F;span&gt;&lt;span&gt;    output_file &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fe8019;&quot;&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fabd2f;&quot;&gt;fopen&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;names.txt&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;w&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;)&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;if &lt;&#x2F;span&gt;&lt;span&gt;(output_file &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fe8019;&quot;&gt;== &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d3869b;&quot;&gt;NULL&lt;&#x2F;span&gt;&lt;span&gt;) {
+&lt;&#x2F;span&gt;&lt;span&gt;        &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fabd2f;&quot;&gt;fprintf&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;(stderr, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;Error opening output file\n&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;)&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;        &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;return &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d3869b;&quot;&gt;1&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;    }
+&lt;&#x2F;span&gt;&lt;span&gt;  
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;while &lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fabd2f;&quot;&gt;fscanf&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;(scores_file, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;%80s %d&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;, name, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fe8019;&quot;&gt;&amp;amp;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;total) &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fe8019;&quot;&gt;== &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d3869b;&quot;&gt;2&lt;&#x2F;span&gt;&lt;span&gt;) {
+&lt;&#x2F;span&gt;&lt;span&gt;        &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fabd2f;&quot;&gt;printf&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;Name: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;%s&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;. Score: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;%d&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;.\n&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;, name, total)&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;        &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fabd2f;&quot;&gt;fprintf&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;(output_file, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;%s&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;\n&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;, name)&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;    }
+&lt;&#x2F;span&gt;&lt;span&gt;  
+&lt;&#x2F;span&gt;&lt;span&gt;    error &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fe8019;&quot;&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fabd2f;&quot;&gt;fclose&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;(scores_file)&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;if &lt;&#x2F;span&gt;&lt;span&gt;(error &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fe8019;&quot;&gt;!= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d3869b;&quot;&gt;0&lt;&#x2F;span&gt;&lt;span&gt;) {
+&lt;&#x2F;span&gt;&lt;span&gt;        &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fabd2f;&quot;&gt;fprintf&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;(stderr, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;fclose failed on input file\n&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;)&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;        &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;return &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d3869b;&quot;&gt;1&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;    }
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;    error &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fe8019;&quot;&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fabd2f;&quot;&gt;fclose&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;(output_file)&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;if &lt;&#x2F;span&gt;&lt;span&gt;(error &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fe8019;&quot;&gt;!= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d3869b;&quot;&gt;0&lt;&#x2F;span&gt;&lt;span&gt;) {
+&lt;&#x2F;span&gt;&lt;span&gt;        &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fabd2f;&quot;&gt;fprintf&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;(stderr, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;fclose failed on output file\n&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;)&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;        &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;return &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d3869b;&quot;&gt;1&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;    }
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;return &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d3869b;&quot;&gt;0&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;}
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;ul&gt;
+&lt;li&gt;for &lt;code&gt;fclose&lt;&#x2F;code&gt;
+&lt;ul&gt;
+&lt;li&gt;return 1: error&lt;&#x2F;li&gt;
+&lt;li&gt;return 0: success&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;low-level-io&quot;&gt;Low Level IO&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;not all files are text files&lt;&#x2F;li&gt;
+&lt;li&gt;but we handle them similarly
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;output_file = fopen(&amp;quot;testing.txt&amp;quot;, &amp;quot;r&amp;quot;)&lt;&#x2F;code&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;output_file = fopen(&amp;quot;testing.dat&amp;quot;, &amp;quot;rb&amp;quot;)&lt;&#x2F;code&gt;
+&lt;ul&gt;
+&lt;li&gt;include that letter b&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;Writing to binary files
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;fwrite(const void *ptr, size_t size, size_t nmemb, FILE *stream)&lt;&#x2F;code&gt;
+&lt;ul&gt;
+&lt;li&gt;if return 1: success&lt;&#x2F;li&gt;
+&lt;li&gt;if return 0: failure?&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;const void *ptr&lt;&#x2F;code&gt;: pointer to the data that we want to write to the file. This is typically the starting address of an array, but can also be a pointer to an individual variable if we want to write just one value.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;size_t size&lt;&#x2F;code&gt;: size of each element that we&#x27;re writing to the file.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;size_t nmemb&lt;&#x2F;code&gt;: number of elements that we are writing to the file. For an individual variable, the third parameter is one. For an array, it&#x27;s typically the number of elements in the array.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;FILE *stream&lt;&#x2F;code&gt;: file pointer to which we will write. That file pointer must refer to a stream open in binary mode.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;complier-toolchain&quot;&gt;Complier Toolchain&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Compilation process happens in a single step
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Compiler&lt;&#x2F;strong&gt; is any program that translates one language to another language&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;However gcc must work on many different systems (Linux, windows, etc)&lt;&#x2F;li&gt;
+&lt;li&gt;Compiler looks like the following &lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;pre style=&quot;background-color:#282828;color:#fdf4c1aa;&quot;&gt;&lt;code&gt;&lt;span&gt;flowchart LR
+&lt;&#x2F;span&gt;&lt;span&gt;	id1[Source Program]--&amp;gt;id2[Lexical Analysis]
+&lt;&#x2F;span&gt;&lt;span&gt;	id2[Lexical Analysis]--&amp;gt;|get Token|id3[Syntax Analysis]
+&lt;&#x2F;span&gt;&lt;span&gt;	id3[Syntax Analysis]--&amp;gt;|Next Token|id2[Lexical Analysis]
+&lt;&#x2F;span&gt;&lt;span&gt;	id3[Syntax Analysis]--&amp;gt;|Abstract Syntax Tree|id4[Semantic Analysis]
+&lt;&#x2F;span&gt;&lt;span&gt;	id4[Semantic Analysis]--&amp;gt;|Modified AST|id5[Code Generation]
+&lt;&#x2F;span&gt;&lt;span&gt;	id6[Code Generation]--&amp;gt;|Assembly|id7[Executable Program]
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;ul&gt;
+&lt;li&gt;you can get the assembly file of the program by simply running &lt;code&gt;gcc -S helloworld.c&lt;&#x2F;code&gt;
+&lt;ul&gt;
+&lt;li&gt;makes &lt;code&gt;helloworld.s&lt;&#x2F;code&gt; assembly file&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;The compiler runs in 3 phases
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Frontend&lt;&#x2F;strong&gt;: translates the source code into a largely language independent intermediate representation
+&lt;ul&gt;
+&lt;li&gt;gcc transforms language into gimple and generic&lt;&#x2F;li&gt;
+&lt;li&gt;think of them as AST&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;Middle End&lt;&#x2F;strong&gt;: optimizing your code. &lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;Backend&lt;&#x2F;strong&gt;: translates the intermediate language into the aseembly language that the computer can run
+&lt;ul&gt;
+&lt;li&gt;produces assembly code, not .out file&lt;&#x2F;li&gt;
+&lt;li&gt;must convert it to executable&lt;&#x2F;li&gt;
+&lt;li&gt;this is where &lt;strong&gt;assembler&lt;&#x2F;strong&gt; comes in&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;Assembler
+&lt;ul&gt;
+&lt;li&gt;we can invoke the assembler directly by using the command &lt;code&gt;as helloworld.s -o helloworld&lt;&#x2F;code&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;makes an object file &lt;code&gt;helloworld.o&lt;&#x2F;code&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;to produce an executable, simply execute &lt;code&gt;gcc helloworld.s&lt;&#x2F;code&gt; 
+&lt;ul&gt;
+&lt;li&gt;produces &lt;code&gt;a.out&lt;&#x2F;code&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;Now, we must link 
+&lt;ul&gt;
+&lt;li&gt;the executable is only specific to type of machine, operating system, and even the configuration&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;Loader
+&lt;ul&gt;
+&lt;li&gt;executable must be loaded into memory when executed&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;header-files&quot;&gt;Header files&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;example: &lt;code&gt;gcc compare_sorts.c sorts.c&lt;&#x2F;code&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;when multiple files are required, each files are compiled and assembled seperately. &lt;&#x2F;li&gt;
+&lt;li&gt;then object files are combined during the linking phase&lt;&#x2F;li&gt;
+&lt;li&gt;other way to do it is (&lt;strong&gt;seperate compilation&lt;&#x2F;strong&gt;)&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;pre data-lang=&quot;shell&quot; style=&quot;background-color:#282828;color:#fdf4c1aa;&quot; class=&quot;language-shell &quot;&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span&gt;&amp;gt; gcc -c compare_sorts.c
+&lt;&#x2F;span&gt;&lt;span&gt;&amp;gt; gcc -c sorts.c
+&lt;&#x2F;span&gt;&lt;span&gt;&amp;gt; ls *.o
+&lt;&#x2F;span&gt;&lt;span&gt;compare_sorts.o sorts.o
+&lt;&#x2F;span&gt;&lt;span&gt;&amp;gt; gcc compare_sorts.o sort.o
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;ul&gt;
+&lt;li&gt;Seperate compilation has both pros and con
+&lt;ul&gt;
+&lt;li&gt;Pros: small change in one file --&amp;gt; just recompile that one file and link it again&lt;&#x2F;li&gt;
+&lt;li&gt;Con: type change in one file --&amp;gt; error not detected, most likely seg fault
+&lt;ul&gt;
+&lt;li&gt;to avoid this, we use a header file&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;Header file
+&lt;ul&gt;
+&lt;li&gt;Type of interface
+&lt;ul&gt;
+&lt;li&gt;tells what functions do and what types they require&lt;&#x2F;li&gt;
+&lt;li&gt;ends with &lt;code&gt;.h&lt;&#x2F;code&gt; syntax&lt;&#x2F;li&gt;
+&lt;li&gt;include it in your c files by &lt;code&gt;include &amp;quot;sorts.h&amp;quot;&lt;&#x2F;code&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;After initializing in both files gives you duplicate error
+&lt;ul&gt;
+&lt;li&gt;Seperately compiled, they are fine&lt;&#x2F;li&gt;
+&lt;li&gt;during linking phase, not fine&lt;&#x2F;li&gt;
+&lt;li&gt;use &lt;code&gt;extern&lt;&#x2F;code&gt; creates name of the variables without actually defining space for variables&lt;&#x2F;li&gt;
+&lt;li&gt;if you want to declare same named variables in each file, use &lt;code&gt;static&lt;&#x2F;code&gt; in global field&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;Use guard statements&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;pre data-lang=&quot;c&quot; style=&quot;background-color:#282828;color:#fdf4c1aa;&quot; class=&quot;language-c &quot;&gt;&lt;code class=&quot;language-c&quot; data-lang=&quot;c&quot;&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;#ifdef&lt;&#x2F;span&gt;&lt;span&gt; SORTS_H
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;#define &lt;&#x2F;span&gt;&lt;span style=&quot;color:#8ec07c;&quot;&gt;SORtS_H
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;ul&gt;
+&lt;li&gt;Some more notes about static 
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;static&lt;&#x2F;code&gt; , when used in local, means variable should keep value across function execution&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;makefile&quot;&gt;Makefile&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;lmao nope&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;lecture-notes-1&quot;&gt;Lecture Notes&lt;&#x2F;h3&gt;
+&lt;h4 id=&quot;five-standard-actions&quot;&gt;Five Standard Actions&lt;&#x2F;h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Open a file&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;pre data-lang=&quot;c&quot; style=&quot;background-color:#282828;color:#fdf4c1aa;&quot; class=&quot;language-c &quot;&gt;&lt;code class=&quot;language-c&quot; data-lang=&quot;c&quot;&gt;&lt;span&gt;FILE &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fe8019;&quot;&gt;*&lt;&#x2F;span&gt;&lt;span style=&quot;color:#8ec07c;&quot;&gt;fopen&lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;const char &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fe8019;&quot;&gt;*&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;pathname&lt;&#x2F;span&gt;&lt;span&gt;, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;const char &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fe8019;&quot;&gt;*&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;mode&lt;&#x2F;span&gt;&lt;span&gt;)
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;ul&gt;
+&lt;li&gt;Read from a file&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;pre data-lang=&quot;c&quot; style=&quot;background-color:#282828;color:#fdf4c1aa;&quot; class=&quot;language-c &quot;&gt;&lt;code class=&quot;language-c&quot; data-lang=&quot;c&quot;&gt;&lt;span style=&quot;font-style:italic;color:#928374;&quot;&gt;&#x2F;&#x2F; Text I&#x2F;O  
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;int &lt;&#x2F;span&gt;&lt;span style=&quot;color:#8ec07c;&quot;&gt;fscanf&lt;&#x2F;span&gt;&lt;span&gt;(FILE &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fe8019;&quot;&gt;*&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;stream&lt;&#x2F;span&gt;&lt;span&gt;, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;const char &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fe8019;&quot;&gt;*&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;format&lt;&#x2F;span&gt;&lt;span&gt;, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fe8019;&quot;&gt;...&lt;&#x2F;span&gt;&lt;span&gt;)  
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;char &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fe8019;&quot;&gt;*&lt;&#x2F;span&gt;&lt;span style=&quot;color:#8ec07c;&quot;&gt;fgets&lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;char &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fe8019;&quot;&gt;*&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;s&lt;&#x2F;span&gt;&lt;span&gt;, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;int &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;size&lt;&#x2F;span&gt;&lt;span&gt;, FILE &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fe8019;&quot;&gt;*&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;stream&lt;&#x2F;span&gt;&lt;span&gt;)  
+&lt;&#x2F;span&gt;&lt;span&gt;  
+&lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#928374;&quot;&gt;&#x2F;&#x2F; Binary I&#x2F;O  
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fabd2f;&quot;&gt;size_t &lt;&#x2F;span&gt;&lt;span style=&quot;color:#8ec07c;&quot;&gt;fread&lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;void &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fe8019;&quot;&gt;*&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;ptr&lt;&#x2F;span&gt;&lt;span&gt;, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fabd2f;&quot;&gt;size_t &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;size&lt;&#x2F;span&gt;&lt;span&gt;, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fabd2f;&quot;&gt;size_t &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;nmemb&lt;&#x2F;span&gt;&lt;span&gt;, FILE &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fe8019;&quot;&gt;*&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;stream&lt;&#x2F;span&gt;&lt;span&gt;)
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;ul&gt;
+&lt;li&gt;Write to a file&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;pre data-lang=&quot;c&quot; style=&quot;background-color:#282828;color:#fdf4c1aa;&quot; class=&quot;language-c &quot;&gt;&lt;code class=&quot;language-c&quot; data-lang=&quot;c&quot;&gt;&lt;span style=&quot;font-style:italic;color:#928374;&quot;&gt;&#x2F;&#x2F; Text I&#x2F;O  
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;int &lt;&#x2F;span&gt;&lt;span style=&quot;color:#8ec07c;&quot;&gt;fprintf&lt;&#x2F;span&gt;&lt;span&gt;(FILE &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fe8019;&quot;&gt;*&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;stream&lt;&#x2F;span&gt;&lt;span&gt;, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;const char &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fe8019;&quot;&gt;*&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;format&lt;&#x2F;span&gt;&lt;span&gt;, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fe8019;&quot;&gt;...&lt;&#x2F;span&gt;&lt;span&gt;)  
+&lt;&#x2F;span&gt;&lt;span&gt;  
+&lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#928374;&quot;&gt;&#x2F;&#x2F; Binary I&#x2F;O  
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fabd2f;&quot;&gt;size_t &lt;&#x2F;span&gt;&lt;span style=&quot;color:#8ec07c;&quot;&gt;fwrite&lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;const void &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fe8019;&quot;&gt;*&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;ptr&lt;&#x2F;span&gt;&lt;span&gt;, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fabd2f;&quot;&gt;size_t &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;size&lt;&#x2F;span&gt;&lt;span&gt;, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fabd2f;&quot;&gt;size_t &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;nmemb&lt;&#x2F;span&gt;&lt;span&gt;, FILE &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fe8019;&quot;&gt;*&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;stream&lt;&#x2F;span&gt;&lt;span&gt;)
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;ul&gt;
+&lt;li&gt;Change position in a file&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;pre data-lang=&quot;c&quot; style=&quot;background-color:#282828;color:#fdf4c1aa;&quot; class=&quot;language-c &quot;&gt;&lt;code class=&quot;language-c&quot; data-lang=&quot;c&quot;&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;int &lt;&#x2F;span&gt;&lt;span style=&quot;color:#8ec07c;&quot;&gt;fseek&lt;&#x2F;span&gt;&lt;span&gt;(FILE &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fe8019;&quot;&gt;*&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;stream&lt;&#x2F;span&gt;&lt;span&gt;, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;long &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;offset&lt;&#x2F;span&gt;&lt;span&gt;, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;int &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;whence&lt;&#x2F;span&gt;&lt;span&gt;)
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;ul&gt;
+&lt;li&gt;Close a file&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;pre data-lang=&quot;c&quot; style=&quot;background-color:#282828;color:#fdf4c1aa;&quot; class=&quot;language-c &quot;&gt;&lt;code class=&quot;language-c&quot; data-lang=&quot;c&quot;&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;int &lt;&#x2F;span&gt;&lt;span style=&quot;color:#8ec07c;&quot;&gt;fclose&lt;&#x2F;span&gt;&lt;span&gt;(FILE &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fe8019;&quot;&gt;*&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;stream&lt;&#x2F;span&gt;&lt;span&gt;)
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;ul&gt;
+&lt;li&gt;Inspecting the executable using &lt;code&gt;odjump&lt;&#x2F;code&gt;
+&lt;ul&gt;
+&lt;li&gt;Reading all section metadata:&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;pre data-lang=&quot;shell&quot; style=&quot;background-color:#282828;color:#fdf4c1aa;&quot; class=&quot;language-shell &quot;&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;&lt;span&gt;$ objdump --wide --section-headers &amp;lt;FILE&amp;gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h1 id=&quot;week-6&quot;&gt;Week 6&lt;&#x2F;h1&gt;
+&lt;h2 id=&quot;pcrs-5&quot;&gt;PCRS&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;&quot;&gt;&lt;&#x2F;h3&gt;
+&lt;h1 id=&quot;for-midterm&quot;&gt;For Midterm&lt;&#x2F;h1&gt;
+&lt;h2 id=&quot;c-function-prototypes&quot;&gt;C function prototypes&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;int fclose(FILE *stream)&lt;&#x2F;code&gt;
+&lt;ul&gt;
+&lt;li&gt;parameters
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;stream&lt;&#x2F;code&gt; - pointer to the FILE object that specifies stream to be closed&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;return value
+&lt;ul&gt;
+&lt;li&gt;if successful, return 0&lt;&#x2F;li&gt;
+&lt;li&gt;if not, return EOF&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;char fgets(char *str, int n, FILE stream)&lt;&#x2F;code&gt;
+&lt;ul&gt;
+&lt;li&gt;parameters
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;str&lt;&#x2F;code&gt; - pointer to an array where string read is stored&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;n&lt;&#x2F;code&gt; - maximum number of characters to be read (including final null character)
+&lt;ul&gt;
+&lt;li&gt;so, be careful, probably have to do &lt;code&gt;fgets(s, len + 1, fp)&lt;&#x2F;code&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;return value
+&lt;ul&gt;
+&lt;li&gt;if successful, returns str pointer&lt;&#x2F;li&gt;
+&lt;li&gt;if not, NULL&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;FILE fopen(const char *file, const char *mode)&lt;&#x2F;code&gt;
+&lt;ul&gt;
+&lt;li&gt;parameters
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;filename&lt;&#x2F;code&gt; - This is the C string containing the name of the file to be opened.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;mode&lt;&#x2F;code&gt; - This is the C string containing a file access mode.
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;r&lt;&#x2F;code&gt; : opens file for reading. File must exist&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;w&lt;&#x2F;code&gt;: Creates an empty file for writing.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;a&lt;&#x2F;code&gt;: Appends to a file. Writing operations, append data at the end of the file. The file is created if it does not exist.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;return value
+&lt;ul&gt;
+&lt;li&gt;if successful, returns FILE pointer&lt;&#x2F;li&gt;
+&lt;li&gt;if not, returns NULL&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;size_t fread(void *ptr, size t size, size t nmemb, FILE *stream)&lt;&#x2F;code&gt;
+&lt;ul&gt;
+&lt;li&gt;parameters
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;ptr&lt;&#x2F;code&gt; - pointer to a block of memory &lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;size&lt;&#x2F;code&gt; - size in bytes of each element to be read&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;nmemb&lt;&#x2F;code&gt; - number of elements, each one with a size of &lt;strong&gt;size&lt;&#x2F;strong&gt; bytes&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;stream&lt;&#x2F;code&gt; - pointer to a FILE object that specifies an input stream&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;return value
+&lt;ul&gt;
+&lt;li&gt;if successful, total number of elements&lt;&#x2F;li&gt;
+&lt;li&gt;if not, EOF&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;int fscanf(FILE *restrict stream, const char *restrict format, ...)&lt;&#x2F;code&gt;
+&lt;ul&gt;
+&lt;li&gt;return value
+&lt;ul&gt;
+&lt;li&gt;if successful, total number of elements&lt;&#x2F;li&gt;
+&lt;li&gt;if not, EOF&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;int fseek(FILE *stream, long offset, int whence)&lt;&#x2F;code&gt;
+&lt;ul&gt;
+&lt;li&gt;parameters
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;stream&lt;&#x2F;strong&gt; − This is the pointer to a FILE object that identifies the stream.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;offset&lt;&#x2F;strong&gt; − This is the number of bytes to offset from whence.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;whence&lt;&#x2F;strong&gt; − This is the position from where offset is added. It is specified by one of the following constants −&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;constants
+&lt;ul&gt;
+&lt;li&gt;SEEK_SET: beginning of file&lt;&#x2F;li&gt;
+&lt;li&gt;SEEK_CUR: current position of file&lt;&#x2F;li&gt;
+&lt;li&gt;SEEK_END: end of file&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;return value
+&lt;ul&gt;
+&lt;li&gt;if successful, returns zero&lt;&#x2F;li&gt;
+&lt;li&gt;if not, non zero value&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;size t fwrite(const void *ptr, size t size, size t nmemb, FILE *stream)&lt;&#x2F;code&gt;
+&lt;ul&gt;
+&lt;li&gt;parameters
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;ptr&lt;&#x2F;strong&gt; − This is the pointer to the array of elements to be written.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;size&lt;&#x2F;strong&gt; − This is the size in bytes of each element to be written.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;nmemb&lt;&#x2F;strong&gt; − This is the number of elements, each one with a size of &lt;strong&gt;size&lt;&#x2F;strong&gt; bytes.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;stream&lt;&#x2F;strong&gt; − This is the pointer to a FILE object that specifies an output stream.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;return value
+&lt;ul&gt;
+&lt;li&gt;if successful, total number of elements&lt;&#x2F;li&gt;
+&lt;li&gt;if not, error&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;Excerpt from strcpy&#x2F;strncpy man page:
+&lt;ul&gt;
+&lt;li&gt;The strcpy() functions copy the string src to dst (including the terminating ‘\0’ character).&lt;&#x2F;li&gt;
+&lt;li&gt;The strncpy() function copies at most n characters from src into dst. If src is less than n  characters long, the remainder of dst is filled with ‘\0’ characters. Otherwise, dst is not terminated.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;Excerpt from strstr man page:
+&lt;ul&gt;
+&lt;li&gt;The strstr() function finds the first occurrence of the substring needle  in the string haystack. It returns a pointer to the beginning of the  substring, or NULL if the substring is not found.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;Excerpt from strchr man page:
+&lt;ul&gt;
+&lt;li&gt;The strchr() function locates the first occurrence of c (converted to a char) in the  string pointed to by s. The terminating null character is considered to be part of  the string; therefore if c is ‘\0’, the functions locate the terminating ‘\0’.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;Excerpt from strcat man page:
+&lt;ul&gt;
+&lt;li&gt;The strcat() function appends the src string to the dest string, overwriting the terminating null  byte (’\0’) at the end of dest, and then adds a terminating null byte.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;Useful Unix programs: cat, cut, wc, grep, sort, head, tail, echo, set, uniq, chmod&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+</content>
+	</entry>
+</feed>

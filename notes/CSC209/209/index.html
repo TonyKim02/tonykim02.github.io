@@ -1,0 +1,1700 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSC209 Notes - Hyun Bin Kim's Random Thoughts</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap">
+  <link rel="stylesheet" href="https://tonykim02.github.io./assets/css/custom.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"><link rel="apple-touch-icon" sizes="180x180" href="https://tonykim02.github.io./images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://tonykim02.github.io./images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://tonykim02.github.io./images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="https://tonykim02.github.io./images/favicon/site.webmanifest">
+    <link rel="mask-icon" href="https://tonykim02.github.io./images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#2d89ef">
+    <meta name="theme-color" content="#ffffff"><link rel="canonical" href="https://tonykim02.github.io./notes/CSC209/209/" /><link rel="alternate" type="application/atom+xml"
+        title="RSS" href="https://tonykim02.github.io./atom.xml"
+      ><meta name="author" content="Hyun Bin Kim"><meta name="description" content="This section includes all my notes regarding CSC209" /><meta property="article:published_time" content='2023-02-22T22:24:00-05:00' /><meta name="keywords" content="CSC209,"><meta name="generator" content="Zola">
+  <meta property="og:title" content="CSC209 Notes" />
+  <meta property="og:url" content="https://tonykim02.github.io./notes/CSC209/209/" /><meta property="og:description" content="This section includes all my notes regarding CSC209" /><meta property="og:site_name" content="Hyun Bin Kim's Random Thoughts" />
+  <meta property="og:locale" content="en_US" />
+  <meta name="twitter:card" content="summary" /><meta name="twitter:creator" content="@gimhyeo97622817" /><meta name="google-site-verification" content="0123457890abcdefg" />
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-0123456789"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-0123456789');
+    </script>
+</head>
+<body>
+  <div class="container-fluid vh-100">
+    <div class="row h-100"><div
+    class="sidebar d-none d-xl-block col-auto mh-100 p-0 overflow-auto"
+  >
+    <aside class="d-flex flex-column justify-content-between h-100">
+      <div class="d-none mb-4 pt-5 px-4 text-center">
+        <div class="sidebar-avatar mb-2 mx-auto border border-3 rounded-circle">
+          <a href="https://tonykim02.github.io" target="_blank" rel="noopener noreferrer">
+    <img
+      src="https://tonykim02.github.io./images/avatar.jpeg"
+      alt="Hyun Bin Kim"
+      class="img-fluid"
+    >
+  </a>
+        </div>
+        <div class="mb-1">
+          <a
+            href="https://tonykim02.github.io."
+            class="sidebar-title fs-5 fw-bold text-decoration-none"
+          >
+            Hyun Bin Kim's Random Thoughts
+          </a>
+        </div>
+        <div class="fw-light">
+          Blog, Portfolio, and Random Thoughts of Hyun Bin Kim
+        </div>
+      </div>
+
+      <div class="sidebar-nav list-group my-auto rounded-0 text-center"><a
+        href="https://tonykim02.github.io./"
+        class="sidebar-nav-item list-group-item list-group-item-action border border-0"
+        data-bs-toggle="tooltip" data-bs-title="Home"
+      >
+        <span class="sidebar-nav-icon bi bi-house d-none d-xl-inline fs-4"></span>
+        <span class="sidebar-nav-text d-none">
+          Home
+        </span>
+      </a><a
+        href="https://tonykim02.github.io./blog/"
+        class="sidebar-nav-item list-group-item list-group-item-action border border-0"
+        data-bs-toggle="tooltip" data-bs-title="Blog"
+      >
+        <span class="sidebar-nav-icon bi bi-file-earmark-text d-none d-xl-inline fs-4"></span>
+        <span class="sidebar-nav-text d-none">
+          Blog
+        </span>
+      </a><a
+        href="https://tonykim02.github.io./@projects/_index.md"
+        class="sidebar-nav-item list-group-item list-group-item-action border border-0"
+        data-bs-toggle="tooltip" data-bs-title="Projects"
+      >
+        <span class="sidebar-nav-icon bi bi-terminal d-none d-xl-inline fs-4"></span>
+        <span class="sidebar-nav-text d-none">
+          Projects
+        </span>
+      </a><a
+        href="https://tonykim02.github.io./notes/"
+        class="sidebar-nav-item list-group-item list-group-item-action border border-0"
+        data-bs-toggle="tooltip" data-bs-title="Notes"
+      >
+        <span class="sidebar-nav-icon bi bi-journal-text d-none d-xl-inline fs-4"></span>
+        <span class="sidebar-nav-text d-none">
+          Notes
+        </span>
+      </a><a
+        href="https://tonykim02.github.io/categories"
+        class="sidebar-nav-item list-group-item list-group-item-action border border-0"
+        data-bs-toggle="tooltip" data-bs-title="Category"
+      >
+        <span class="sidebar-nav-icon bi bi-bookmarks d-none d-xl-inline fs-4"></span>
+        <span class="sidebar-nav-text d-none">
+          Category
+        </span>
+      </a></div>
+
+      <div class="sidebar-social d-none mt-4 pb-4 px-4">
+        <div class="container-fluid">
+          <div class="row justify-content-center">
+            <div class="col-auto px-2">
+        <a
+          href="mailto:hyunbin.kim@mail.utoronto.ca"
+          target="_blank" rel="noopener noreferrer"
+          data-bs-toggle="tooltip"
+          data-bs-title='Email'
+          class="text-decoration-none"
+        >
+          <span class="bi bi-envelope-fill"></span>
+        </a>
+      </div><div class="col-auto px-2">
+        <a
+          href="https://github.com/tonykim02"
+          target="_blank" rel="noopener noreferrer"
+          data-bs-toggle="tooltip"
+          data-bs-title='GitHub'
+          class="text-decoration-none"
+        >
+          <span class="bi bi-github"></span>
+        </a>
+      </div><div class="col-auto px-2">
+        <a
+          href="https://twitter.com/gimhyeo97622817"
+          target="_blank" rel="noopener noreferrer"
+          data-bs-toggle="tooltip"
+          data-bs-title='Twitter'
+          class="text-decoration-none"
+        >
+          <span class="bi bi-twitter"></span>
+        </a>
+      </div><div class="col-auto px-2">
+        <a
+          href="https://www.linkedin.com/in/hyunbin-kim/"
+          target="_blank" rel="noopener noreferrer"
+          data-bs-toggle="tooltip"
+          data-bs-title='LinkedIn'
+          class="text-decoration-none"
+        >
+          <span class="bi bi-linkedin"></span>
+        </a>
+      </div><div class="col-auto px-2">
+        <a
+          href="https://www.facebook.com/"
+          target="_blank" rel="noopener noreferrer"
+          data-bs-toggle="tooltip"
+          data-bs-title='Facebook'
+          class="text-decoration-none"
+        >
+          <span class="bi bi-facebook"></span>
+        </a>
+      </div>
+          </div>
+        </div>
+      </div>
+    </aside>
+  </div><div class="col mh-100 overflow-auto px-0"><nav
+    class="navbar navbar-expand navbar-bg-light sticky-top border-bottom"
+  >
+    <div class="container-fluid"><button
+        type="button"
+        class="btn d-block d-xl-none fs-5"
+        data-bs-toggle="offcanvas" data-bs-target="#offcanvas"
+        aria-controls="offcanvas"
+      >
+        <span class="bi bi-list"></span>
+      </button>
+      
+      <div class="col-8">
+        
+          <div class="row justify-content-center justify-content-xl-start p-2 ps-xl-3 text-center"><div class="col-auto d-none d-xl-block">
+        <a
+          href="https://tonykim02.github.io./notes/"
+          class="text-decoration-none"
+        >
+          Notes
+        </a>
+      </div>
+      <div class="col-auto d-none d-xl-block">
+        <span class="text-secondary">
+          »
+        </span>
+      </div><div class="col-auto">
+      <span
+        class="d-inline d-sm-none text-secondary"
+        data-bs-toggle="tooltip"
+        data-bs-title="CSC209 Notes"
+      >
+        CSC209 Notes
+      </span>
+      <span
+        class="d-none d-sm-inline text-secondary"
+        data-bs-toggle="tooltip"
+        data-bs-title="CSC209 Notes"
+      >
+        CSC209 Notes
+      </span>
+    </div>
+  </div>
+        
+      </div>
+
+      <button
+    type="button" data-bs-toggle="modal" data-bs-target="#searchModal"
+    class="btn border border-0"
+  >
+    <span class="bi bi-search fs-5"></span>
+  </button>
+    </div>
+  </nav><div class="d-flex flex-column h-100"><main class="container">
+    <div class="row justify-content-center mt-5 mb-5">
+      <div class="col-11 col-lg-10 col-xxl-9">
+        <h1 class="mb-4 display-4">
+          CSC209 Notes
+        </h1>
+        <script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    processEscapes: true
+  }
+});
+</script>
+<script
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.3/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+<script type="text/javascript"
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<!-- include mermaid support -->
+<script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+<script>mermaid.initialize({startOnLoad:true});</script>
+<p>This note includes all my concurrent notes regarding UofT Course CSC209. </p>
+<h1 id="table-of-contents">Table of Contents</h1>
+<ul>
+<li><a href="https://tonykim02.github.io./notes/CSC209/209/#table-of-contents">Table of Contents</a></li>
+<li><a href="https://tonykim02.github.io./notes/CSC209/209/#week-1">Week 1</a>
+<ul>
+<li><a href="https://tonykim02.github.io./notes/CSC209/209/#pcrs">PCRS</a></li>
+<li><a href="https://tonykim02.github.io./notes/CSC209/209/#lecture-slides">Lecture Slides</a>
+<ul>
+<li><a href="https://tonykim02.github.io./notes/CSC209/209/#shells">Shells</a></li>
+<li><a href="https://tonykim02.github.io./notes/CSC209/209/#std-output-std-input-and-piping">Std output, Std input, and piping</a></li>
+<li><a href="https://tonykim02.github.io./notes/CSC209/209/#filesystem">Filesystem</a></li>
+<li><a href="https://tonykim02.github.io./notes/CSC209/209/#file-permissions">File Permissions</a></li>
+</ul>
+</li>
+<li><a href="https://tonykim02.github.io./notes/CSC209/209/#labs">Labs</a></li>
+</ul>
+</li>
+<li><a href="https://tonykim02.github.io./notes/CSC209/209/#week-2">Week 2</a>
+<ul>
+<li><a href="https://tonykim02.github.io./notes/CSC209/209/#pcrs-1">PCRS</a></li>
+<li><a href="https://tonykim02.github.io./notes/CSC209/209/#lecture">Lecture</a></li>
+<li><a href="https://tonykim02.github.io./notes/CSC209/209/#worksheet">Worksheet</a></li>
+</ul>
+</li>
+<li><a href="https://tonykim02.github.io./notes/CSC209/209/#week-3">Week 3</a>
+<ul>
+<li><a href="https://tonykim02.github.io./notes/CSC209/209/#pcrs-2">PCRS</a></li>
+<li><a href="https://tonykim02.github.io./notes/CSC209/209/#lecture-slides-1">Lecture Slides</a></li>
+<li><a href="https://tonykim02.github.io./notes/CSC209/209/#additional-notes">Additional Notes</a></li>
+</ul>
+</li>
+<li><a href="https://tonykim02.github.io./notes/CSC209/209/#week-4">Week 4</a>
+<ul>
+<li><a href="https://tonykim02.github.io./notes/CSC209/209/#pcrs-3">PCRS</a>
+<ul>
+<li><a href="https://tonykim02.github.io./notes/CSC209/209/#strings">Strings</a>
+<ul>
+<li><a href="https://tonykim02.github.io./notes/CSC209/209/#copying-strings">Copying Strings</a></li>
+<li><a href="https://tonykim02.github.io./notes/CSC209/209/#string-concatenation">String concatenation</a></li>
+<li><a href="https://tonykim02.github.io./notes/CSC209/209/#searching-with-strings">Searching with Strings</a></li>
+</ul>
+</li>
+<li><a href="https://tonykim02.github.io./notes/CSC209/209/#structs">Structs</a>
+<ul>
+<li><a href="https://tonykim02.github.io./notes/CSC209/209/#using-structs-in-functions">Using structs in functions</a></li>
+<li><a href="https://tonykim02.github.io./notes/CSC209/209/#using-structs-in-functions-1">Using Structs in Functions</a></li>
+<li><a href="https://tonykim02.github.io./notes/CSC209/209/#pointers-to-structs">Pointers to Structs</a></li>
+</ul>
+</li>
+<li><a href="https://tonykim02.github.io./notes/CSC209/209/#dynmaic-memory-and-strings">Dynmaic memory and strings</a></li>
+<li><a href="https://tonykim02.github.io./notes/CSC209/209/#linked-structures-and-iteration">Linked Structures and Iteration</a></li>
+</ul>
+</li>
+<li><a href="https://tonykim02.github.io./notes/CSC209/209/#lecture-notes">Lecture Notes</a></li>
+<li><a href="https://tonykim02.github.io./notes/CSC209/209/#additional-notes-1">Additional Notes</a></li>
+</ul>
+</li>
+<li><a href="https://tonykim02.github.io./notes/CSC209/209/#week-5">Week 5</a>
+<ul>
+<li><a href="https://tonykim02.github.io./notes/CSC209/209/#pcrs-4">PCRS</a>
+<ul>
+<li><a href="https://tonykim02.github.io./notes/CSC209/209/#writing-to-files">Writing to Files</a></li>
+<li><a href="https://tonykim02.github.io./notes/CSC209/209/#putting-it-all-together">Putting it all together</a></li>
+<li><a href="https://tonykim02.github.io./notes/CSC209/209/#low-level-io">Low Level IO</a></li>
+<li><a href="https://tonykim02.github.io./notes/CSC209/209/#complier-toolchain">Complier Toolchain</a></li>
+<li><a href="https://tonykim02.github.io./notes/CSC209/209/#header-files">Header files</a></li>
+<li><a href="https://tonykim02.github.io./notes/CSC209/209/#makefile">Makefile</a></li>
+<li><a href="https://tonykim02.github.io./notes/CSC209/209/#lecture-notes-1">Lecture Notes</a>
+<ul>
+<li><a href="https://tonykim02.github.io./notes/CSC209/209/#five-standard-actions">Five Standard Actions</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="https://tonykim02.github.io./notes/CSC209/209/#week-6">Week 6</a>
+<ul>
+<li><a href="https://tonykim02.github.io./notes/CSC209/209/#pcrs-5">PCRS</a>
+<ul>
+<li><a href="#"></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="https://tonykim02.github.io./notes/CSC209/209/#for-midterm">For Midterm</a>
+<ul>
+<li><a href="https://tonykim02.github.io./notes/CSC209/209/#c-function-prototypes">C function prototypes</a></li>
+</ul>
+</li>
+</ul>
+<h1 id="week-1">Week 1</h1>
+<ul>
+<li>This week is the introduction to the course. </li>
+<li>Inverted class stlye (learn the materials beforehand + do worksheets during class)</li>
+<li>Assessments </li>
+</ul>
+<table><thead><tr><th>Work</th><th>Weight</th><th>Deadline</th></tr></thead><tbody>
+<tr><td>Lecture Preperation (PCRS)</td><td>5% (best 10 of 11)</td><td>Tuesday before 10:00am (weeks 2-12)</td></tr>
+<tr><td>Lab Exercises</td><td>10% (best 10 of 11)</td><td>Fridays before 6:30pm (weeks 1-11)</td></tr>
+<tr><td>A1</td><td>5%</td><td>Thursday 26 January before 6:30pm</td></tr>
+<tr><td>A2</td><td>10%</td><td>Wednesday 15 Febuary before 6:30pm</td></tr>
+<tr><td>Midterm Test</td><td>10%</td><td>Tues 28 Febuary during class time</td></tr>
+<tr><td>A3</td><td>10%</td><td>Wednesday 15 March before 6:30pm</td></tr>
+<tr><td>A4</td><td>9%</td><td>Wednesday 5 April before 6:30pm</td></tr>
+<tr><td>Research Surverys</td><td>1% (0.1% $\times$ 10 surveys)</td><td>Fridays before 6:30pm (weeks 2-11)</td></tr>
+<tr><td>Final Exam</td><td>40%</td><td>Minimum grade of 40% required to pass this course</td></tr>
+</tbody></table>
+<h2 id="pcrs">PCRS</h2>
+<ul>
+<li>No PCRS this week!</li>
+</ul>
+<h2 id="lecture-slides">Lecture Slides</h2>
+<ul>
+<li>Some of the Unix command lines
+<ul>
+<li>ls: List the names of the files in the particular Unix directory</li>
+<li>wc: prints the word, byte, and count of the new file</li>
+<li>sort: used for sorting a complete file by arranging the records in specific order</li>
+</ul>
+</li>
+</ul>
+<h3 id="shells">Shells</h3>
+<ul>
+<li>A <strong>shell</strong> is a program that acts as an interface between human and your computer's operating system
+<ul>
+<li>$ is a shell <strong>prompt</strong> </li>
+<li><code>wc hello.c</code> is a command for the shell</li>
+<li><code>wc</code> is the name of executable file (aka program)</li>
+<li><code>hello.c</code> is the arguement to the program</li>
+</ul>
+</li>
+<li>The shell:
+<ul>
+<li>Finds the executable program on your computer</li>
+<li>interprets the args</li>
+<li>Runs program with given args</li>
+<li>Typically have built-in commands that are not exectuable
+<ul>
+<li><code>echo, test</code> </li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="std-output-std-input-and-piping">Std output, Std input, and piping</h3>
+<ul>
+<li>Std Output: default place where program prints text</li>
+<li>Std Input: default place where program read in text (user input)</li>
+<li>We can redirect these using &gt; or &lt;</li>
+</ul>
+<h3 id="filesystem">Filesystem</h3>
+<ul>
+<li>Inode: DS that contains information about a file
+<ul>
+<li>Metadata</li>
+<li>where it is stored</li>
+</ul>
+</li>
+<li>Directory: special type of file that contains <strong>directory entries</strong>
+<ul>
+<li>Directory entry: mapping from file name to inode</li>
+<li>can be nested</li>
+<li><strong>root directory</strong> is at the top of the hierarchy, simply named <code>/</code> </li>
+</ul>
+</li>
+</ul>
+<h3 id="file-permissions">File Permissions</h3>
+<ul>
+<li>3 levels of user access
+<ul>
+<li><strong>user</strong>: who owns the file</li>
+<li><strong>groups</strong>: users that are associated with</li>
+<li><strong>other</strong> users</li>
+</ul>
+</li>
+<li>3 types of access</li>
+</ul>
+<table><thead><tr><th>Type</th><th>For a file</th><th>For a directory</th></tr></thead><tbody>
+<tr><td>read</td><td>View contents of file</td><td>Add/remove files from directory</td></tr>
+<tr><td>write</td><td>Edit/delete file</td><td>Add/remove files from directory</td></tr>
+<tr><td>execute</td><td>Execute a file</td><td>&quot;Pass through&quot; directory to access subdirectories</td></tr>
+</tbody></table>
+<ul>
+<li>Inspect permission using <code>ls -l</code> </li>
+</ul>
+<pre style="background-color:#282828;color:#fdf4c1aa;"><code><span>-rwx--x--x 1 liudavid instrs 16880 Jan 4 13:10 hello  
+</span><span>-rw------- 1 liudavid instrs 166 Jan 4 12:21 hello.c
+</span></code></pre>
+<ul>
+<li>change permission of file using <code>chmod MODE FILE ...</code>
+<ul>
+<li>Three numbers between 0 and 7, for user/group/other
+<ul>
+<li>Each number represents three bits $(b_{0}b_{1}b_{2})_{2}$ where each bit is r/w/x</li>
+<li>Ex: <code>chmod 741 hello</code></li>
+</ul>
+</li>
+<li>other way to do it is <code>&lt;u/g/o&gt;&lt;+/-&gt;&lt;r/w/x&gt;</code> 
+<ul>
+<li>Ex:<code>chmod u+x hello</code> or <code>chmod g-w hello</code> </li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="labs">Labs</h2>
+<ul>
+<li>nothing much here, other than using &lt;, &gt; and piping </li>
+</ul>
+<hr />
+<h1 id="week-2">Week 2</h1>
+<h2 id="pcrs-1">PCRS</h2>
+<ul>
+<li>Pointer: address holding variable</li>
+</ul>
+<pre data-lang="c" style="background-color:#282828;color:#fdf4c1aa;" class="language-c "><code class="language-c" data-lang="c"><span style="color:#fa5c4b;">int </span><span style="color:#fe8019;">*</span><span>pt; </span><span style="font-style:italic;color:#928374;">// not a dereference, but a declaration
+</span></code></pre>
+<ul>
+<li>Passing arrays as variables
+<ul>
+<li>Make sure to pass the length as well </li>
+</ul>
+</li>
+<li>int pointer: 8 byte
+<ul>
+<li>when you add $+1$, increments by 4 byte</li>
+</ul>
+</li>
+<li>char pointer: 1 byte
+<ul>
+<li>when you add  $+1$, increments by 1 byte</li>
+</ul>
+</li>
+<li>Both subtraction and addition works for pointer arithmetic</li>
+</ul>
+<h2 id="lecture">Lecture</h2>
+<ul>
+<li>Array: <strong>contigously</strong> allocated set of objects of a fixed type. 
+<ul>
+<li><code>int nums[4]</code></li>
+</ul>
+</li>
+<li>A <strong>pointer</strong> is an object whose value proviudes a reference to an object of different type</li>
+<li>Two key operators
+<ul>
+<li>*(dereference) </li>
+<li>&amp;(address of)</li>
+</ul>
+</li>
+</ul>
+<h2 id="worksheet">Worksheet</h2>
+<ul>
+<li>normal stack calls with pointers. These are easy. </li>
+<li>Wait till malloc comes in . . . </li>
+</ul>
+<hr />
+<h1 id="week-3">Week 3</h1>
+<h2 id="pcrs-2">PCRS</h2>
+<ul>
+<li>
+<p>Memory Model: a single vast array that houses all of our data</p>
+</li>
+<li>
+<p>The array looks like the table below
+![[Screenshot 2023-02-27 at 12.57.06 PM.png]]</p>
+</li>
+<li>
+<p>Look at the general code below: </p>
+</li>
+</ul>
+<pre data-lang="c" style="background-color:#282828;color:#fdf4c1aa;" class="language-c "><code class="language-c" data-lang="c"><span style="color:#fa5c4b;">int </span><span style="color:#8ec07c;">sum</span><span>(</span><span style="color:#fa5c4b;">int </span><span style="color:#fdf4c1;">a</span><span>, </span><span style="color:#fa5c4b;">int </span><span style="color:#fdf4c1;">b</span><span>) {
+</span><span>	</span><span style="color:#fa5c4b;">int</span><span> i;
+</span><span>	i </span><span style="color:#fe8019;">=</span><span> a </span><span style="color:#fe8019;">+</span><span> b;
+</span><span>	</span><span style="color:#fa5c4b;">return</span><span> i;
+</span><span>}
+</span><span style="color:#fa5c4b;">int</span><span> z;
+</span><span style="color:#fa5c4b;">int </span><span style="color:#8ec07c;">main</span><span>() {
+</span><span>	z </span><span style="color:#fe8019;">= </span><span style="color:#fdf4c1;">sum(</span><span style="color:#d3869b;">1</span><span style="color:#fdf4c1;">, </span><span style="color:#d3869b;">3</span><span style="color:#fdf4c1;">)</span><span>;
+</span><span>
+</span><span>	chat </span><span style="color:#fe8019;">*</span><span>c_ptr </span><span style="color:#fe8019;">= </span><span style="color:#b8bb26;">&quot;Hi!&quot;</span><span>;
+</span><span>	</span><span style="color:#fabd2f;">printf</span><span style="color:#fdf4c1;">(</span><span style="color:#b8bb26;">&quot;Hi!&quot;</span><span style="color:#fdf4c1;">)</span><span>;
+</span><span>	
+</span><span>	</span><span style="color:#fa5c4b;">return </span><span style="color:#d3869b;">0</span><span>;
+</span><span>}
+</span></code></pre>
+<ul>
+<li>once compiled, the code is stored in the code </li>
+<li>function calls are stored in Stack
+<ul>
+<li>remove in LIFO fashion</li>
+<li>Ex: <code>sum</code> call</li>
+<li>store all local var + arguements
+<ul>
+<li>allocate the stack frame (located on top of the stack)
+<ul>
+<li>above main</li>
+</ul>
+</li>
+<li><code>int a int b int i</code></li>
+<li>once used, pop the stack frame</li>
+<li>now the stack could be used for another call</li>
+</ul>
+</li>
+<li>top of the stack is always dedicated for the function that is currently running</li>
+<li><strong>local variables are only accessible once the function is active</strong> </li>
+<li>once stack frame is deallocated, the variable is no longer valid memory location</li>
+<li>Single stack frame stores local variables and arguments for one function call</li>
+</ul>
+</li>
+<li>Global
+<ul>
+<li>when variable is declared outside of any function scope</li>
+<li>can be accessed by any function</li>
+<li>stored in global variable segment</li>
+<li>allocated for the entire program</li>
+<li>Also holds <strong>string literals</strong> 
+<ul>
+<li>take a look at <code>&quot;Hi&quot;</code> </li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Heaps
+<ul>
+<li><code>malloc</code>: allows us to allocated memory while the program runs</li>
+<li>Dynamically allocated memory should always last more than the function it is being called at</li>
+<li>never access variables in stack (after it has been deallocated)</li>
+<li>Use both stack and heap wisely </li>
+</ul>
+</li>
+</ul>
+<pre data-lang="c" style="background-color:#282828;color:#fdf4c1aa;" class="language-c "><code class="language-c" data-lang="c"><span style="color:#fa5c4b;">#include </span><span style="color:#b8bb26;">&lt;stdlib.h&gt;
+</span><span style="color:#fa5c4b;">#include </span><span style="color:#b8bb26;">&lt;stdio.h&gt;
+</span><span>
+</span><span style="color:#fa5c4b;">int </span><span style="color:#8ec07c;">main</span><span>() {
+</span><span>    </span><span style="color:#fa5c4b;">float </span><span style="color:#fe8019;">*</span><span>rainfall </span><span style="color:#fe8019;">= </span><span style="color:#d3869b;">NULL</span><span>;
+</span><span>    </span><span style="font-style:italic;color:#928374;">// Allocate space for a single floating point number and assign its location to the pointer rainfall.
+</span><span style="font-style:italic;color:#928374;">// Submitted code below
+</span><span>    </span><span style="color:#fa5c4b;">float</span><span style="color:#fe8019;">*</span><span> ptr </span><span style="color:#fe8019;">= </span><span style="color:#fabd2f;">malloc</span><span style="color:#fdf4c1;">(</span><span style="color:#fe8019;">sizeof</span><span style="color:#fdf4c1;">(</span><span style="color:#fa5c4b;">float</span><span style="color:#fdf4c1;">))</span><span>;
+</span><span>    rainfall </span><span style="color:#fe8019;">=</span><span> ptr;
+</span><span style="font-style:italic;color:#928374;">// Submitted code above
+</span><span>    </span><span style="color:#fe8019;">*</span><span>rainfall </span><span style="color:#fe8019;">= </span><span style="color:#d3869b;">42.6</span><span>;
+</span><span>    </span><span style="color:#fa5c4b;">return </span><span style="color:#d3869b;">0</span><span>;
+</span><span>}
+</span></code></pre>
+<ul>
+<li>OS 
+<ul>
+<li>cannot be accessed</li>
+<li>will get <code>segmentation fault</code> </li>
+</ul>
+</li>
+<li>Anything close or is 0 is a <strong>buffer</strong></li>
+<li>Type conversions
+<ul>
+<li>converting string to int </li>
+<li><code>char *s = &quot;17&quot;;</code></li>
+<li><code>int i = strtol(s, NULL, 10);</code></li>
+</ul>
+</li>
+</ul>
+<pre data-lang="c" style="background-color:#282828;color:#fdf4c1aa;" class="language-c "><code class="language-c" data-lang="c"><span style="color:#fa5c4b;">#include </span><span style="color:#b8bb26;">&lt;stdio.h&gt;
+</span><span style="color:#fa5c4b;">#include </span><span style="color:#b8bb26;">&lt;stdlib.h&gt;
+</span><span>
+</span><span style="color:#fa5c4b;">int </span><span style="color:#8ec07c;">main</span><span>() {
+</span><span>    </span><span style="font-style:italic;color:#928374;">//char *s = &quot;17&quot;;
+</span><span>    </span><span style="color:#fa5c4b;">char </span><span style="color:#fe8019;">*</span><span>s </span><span style="color:#fe8019;">= </span><span style="color:#b8bb26;">&quot;  -17&quot;</span><span>;
+</span><span>    </span><span style="color:#fa5c4b;">int</span><span> i </span><span style="color:#fe8019;">= </span><span style="color:#fabd2f;">strtol</span><span style="color:#fdf4c1;">(s, </span><span style="color:#d3869b;">NULL</span><span style="color:#fdf4c1;">, </span><span style="color:#d3869b;">10</span><span style="color:#fdf4c1;">)</span><span>;
+</span><span>
+</span><span>    </span><span style="color:#fabd2f;">printf</span><span style="color:#fdf4c1;">(</span><span style="color:#b8bb26;">&quot;i has the value </span><span style="color:#fdf4c1;">%d</span><span style="color:#b8bb26;">\n&quot;</span><span style="color:#fdf4c1;">, i)</span><span>;
+</span><span>
+</span><span>
+</span><span>    s </span><span style="color:#fe8019;">= </span><span style="color:#b8bb26;">&quot;  -17 other junk.&quot;</span><span>;
+</span><span>    </span><span style="color:#fa5c4b;">char </span><span style="color:#fe8019;">*</span><span>leftover;
+</span><span>    i </span><span style="color:#fe8019;">= </span><span style="color:#fabd2f;">strtol</span><span style="color:#fdf4c1;">(s, </span><span style="color:#fe8019;">&amp;</span><span style="color:#fdf4c1;">leftover, </span><span style="color:#d3869b;">10</span><span style="color:#fdf4c1;">)</span><span>;
+</span><span>
+</span><span>    </span><span style="color:#fabd2f;">printf</span><span style="color:#fdf4c1;">(</span><span style="color:#b8bb26;">&quot;i has the value </span><span style="color:#fdf4c1;">%d</span><span style="color:#b8bb26;">\n&quot;</span><span style="color:#fdf4c1;">, i)</span><span>;
+</span><span>    </span><span style="color:#fabd2f;">printf</span><span style="color:#fdf4c1;">(</span><span style="color:#b8bb26;">&quot;leftover has the value </span><span style="color:#fdf4c1;">%s</span><span style="color:#b8bb26;">\n&quot;</span><span style="color:#fdf4c1;">, leftover)</span><span>;
+</span><span>    </span><span style="color:#fa5c4b;">return </span><span style="color:#d3869b;">0</span><span>;
+</span><span>}
+</span></code></pre>
+<ul>
+<li>We can see here we need parameter string to parse, the char pointer to which it locates the leftover string, and the base conversion</li>
+<li>Understand command line arguements
+<ul>
+<li><code>argc, char** argv</code> </li>
+</ul>
+</li>
+</ul>
+<hr />
+<h2 id="lecture-slides-1">Lecture Slides</h2>
+<ul>
+<li>Pitfalls with dynmaic memory
+<ul>
+<li>Memory leak: some heap-allocated memory is never freed</li>
+<li>user-after-free: when code deferences a pointer that has been freed</li>
+<li>Double free: when free is called twice on same pointer
+<ul>
+<li>leads to undefined behavior</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="additional-notes">Additional Notes</h2>
+<ul>
+<li>Stack diagrams make sure:
+<ul>
+<li>you can follow the code + alter it to fix it</li>
+</ul>
+</li>
+<li>pointer to pointer to int is 8 bytes</li>
+</ul>
+<hr />
+<h1 id="week-4">Week 4</h1>
+<h2 id="pcrs-3">PCRS</h2>
+<h3 id="strings">Strings</h3>
+<ul>
+<li>C string: Character array that has a null character immediately after the text
+<ul>
+<li>Its just char array with a null character at the end</li>
+<li><code>\0</code></li>
+</ul>
+</li>
+<li>here are some examples</li>
+</ul>
+<pre data-lang="c" style="background-color:#282828;color:#fdf4c1aa;" class="language-c "><code class="language-c" data-lang="c"><span style="color:#fa5c4b;">#include </span><span style="color:#b8bb26;">&lt;stdio.h&gt;
+</span><span>
+</span><span style="color:#fa5c4b;">int </span><span style="color:#8ec07c;">main</span><span>() {
+</span><span>    </span><span style="color:#fa5c4b;">char</span><span> text[</span><span style="color:#d3869b;">20</span><span>] </span><span style="color:#fe8019;">= </span><span>{</span><span style="color:#b8bb26;">&#39;h&#39;</span><span>, </span><span style="color:#b8bb26;">&#39;e&#39;</span><span>, </span><span style="color:#b8bb26;">&#39;l&#39;</span><span>, </span><span style="color:#b8bb26;">&#39;l&#39;</span><span>, </span><span style="color:#b8bb26;">&#39;o&#39;</span><span>, </span><span style="color:#b8bb26;">&#39;\0&#39;</span><span>};
+</span><span>    </span><span style="font-style:italic;color:#928374;">// This does the same thing
+</span><span>    </span><span style="font-style:italic;color:#928374;">//char text[20] = &quot;hello&quot;;
+</span><span>    </span><span style="font-style:italic;color:#928374;">// stuff like text[5] = &quot;hello&quot; is not a string
+</span><span>    </span><span style="font-style:italic;color:#928374;">// since it does not have space for null terminator
+</span><span>  
+</span><span>    </span><span style="color:#fabd2f;">printf</span><span style="color:#fdf4c1;">(</span><span style="color:#b8bb26;">&quot;</span><span style="color:#fdf4c1;">%s</span><span style="color:#b8bb26;">\n&quot;</span><span style="color:#fdf4c1;">, text)</span><span>;
+</span><span>
+</span><span>	</span><span style="font-style:italic;color:#928374;">// You can also do this
+</span><span>	</span><span style="color:#fa5c4b;">char</span><span> text[] </span><span style="color:#fe8019;">= </span><span style="color:#b8bb26;">&quot;hello&quot;
+</span><span>	</span><span style="font-style:italic;color:#928374;">// in this case, length of text is 6, hello + /0
+</span><span>	</span><span style="font-style:italic;color:#928374;">// this does not mean size can change during program running
+</span><span>
+</span><span>
+</span><span>    </span><span style="font-style:italic;color:#928374;">// But text1 is a pointer to a string literal
+</span><span>    </span><span style="font-style:italic;color:#928374;">// Strong literal is text that cannot be changed
+</span><span>    </span><span style="color:#fa5c4b;">char </span><span style="color:#fe8019;">*</span><span>text1 </span><span style="color:#fe8019;">= </span><span style="color:#b8bb26;">&quot;hello&quot;</span><span>;
+</span><span>    </span><span style="color:#fabd2f;">printf</span><span style="color:#fdf4c1;">(</span><span style="color:#b8bb26;">&quot;</span><span style="color:#fdf4c1;">%s</span><span style="color:#b8bb26;">\n&quot;</span><span style="color:#fdf4c1;">, text1)</span><span>;
+</span><span>
+</span><span>
+</span><span>    </span><span style="font-style:italic;color:#928374;">// We can change a character in text but not text1    
+</span><span>    text[</span><span style="color:#d3869b;">0</span><span>] </span><span style="color:#fe8019;">= </span><span style="color:#b8bb26;">&#39;j&#39;</span><span>;
+</span><span>    </span><span style="color:#fabd2f;">printf</span><span style="color:#fdf4c1;">(</span><span style="color:#b8bb26;">&quot;</span><span style="color:#fdf4c1;">%s</span><span style="color:#b8bb26;">\n&quot;</span><span style="color:#fdf4c1;">, text)</span><span>;
+</span><span>    </span><span style="font-style:italic;color:#928374;">// See what happens if we uncomment the next line and compile
+</span><span>    </span><span style="font-style:italic;color:#928374;">// text1[3] = &#39;X&#39;;
+</span><span>
+</span><span>    </span><span style="color:#fa5c4b;">return </span><span style="color:#d3869b;">0</span><span>;
+</span><span>}
+</span></code></pre>
+<ul>
+<li>sizeof is a <em>compile time</em> operation</li>
+</ul>
+<pre data-lang="c" style="background-color:#282828;color:#fdf4c1aa;" class="language-c "><code class="language-c" data-lang="c"><span style="color:#fa5c4b;">#include </span><span style="color:#b8bb26;">&lt;stdio.h&gt;
+</span><span style="color:#fa5c4b;">#include </span><span style="color:#b8bb26;">&lt;string.h&gt;
+</span><span>
+</span><span style="color:#fa5c4b;">int </span><span style="color:#8ec07c;">main</span><span>() {
+</span><span>    </span><span style="color:#fa5c4b;">char</span><span> weekday[</span><span style="color:#d3869b;">10</span><span>] </span><span style="color:#fe8019;">= </span><span style="color:#b8bb26;">&quot;Monday&quot;</span><span>;
+</span><span>    </span><span style="font-style:italic;color:#928374;">// looks at number of bytes occupied by array, in this case it is 10
+</span><span>    </span><span style="color:#fabd2f;">printf</span><span style="color:#fdf4c1;">(</span><span style="color:#b8bb26;">&quot;Size of string: </span><span style="color:#fdf4c1;">%lu</span><span style="color:#b8bb26;">\n&quot;</span><span style="color:#fdf4c1;">, </span><span style="color:#fe8019;">sizeof</span><span style="color:#fdf4c1;">(weekday))</span><span>;
+</span><span>    </span><span style="font-style:italic;color:#928374;">// counts the number of character before null terminator
+</span><span>    </span><span style="color:#fabd2f;">printf</span><span style="color:#fdf4c1;">(</span><span style="color:#b8bb26;">&quot;Length of string: </span><span style="color:#fdf4c1;">%lu</span><span style="color:#b8bb26;">\n&quot;</span><span style="color:#fdf4c1;">, </span><span style="color:#fabd2f;">strlen</span><span style="color:#fdf4c1;">(weekday))</span><span>;
+</span><span>    </span><span style="color:#fa5c4b;">return </span><span style="color:#d3869b;">0</span><span>;
+</span><span>}
+</span></code></pre>
+<h4 id="copying-strings">Copying Strings</h4>
+<ul>
+<li><code>strcpy(char* s1, char* s2)</code>
+<ul>
+<li>copies the characters from string s2 into the beginning of string s1</li>
+<li>s2 is required to be string
+<ul>
+<li>string literal or char array with null term</li>
+</ul>
+</li>
+<li><code>strncpy(char *s1, char*s2, int n)</code>
+<ul>
+<li>n indicates maximum parameter</li>
+<li>max num n including null terminator</li>
+<li>to be safe, add the null termaintor add the end</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<pre data-lang="c" style="background-color:#282828;color:#fdf4c1aa;" class="language-c "><code class="language-c" data-lang="c"><span style="color:#fa5c4b;">#include </span><span style="color:#b8bb26;">&lt;stdio.h&gt;
+</span><span style="color:#fa5c4b;">#include </span><span style="color:#b8bb26;">&lt;string.h&gt;
+</span><span>
+</span><span style="color:#fa5c4b;">int </span><span style="color:#8ec07c;">main</span><span>() {
+</span><span>    </span><span style="color:#fa5c4b;">char</span><span> s1[</span><span style="color:#d3869b;">5</span><span>];
+</span><span>    </span><span style="color:#fa5c4b;">char</span><span> s2[</span><span style="color:#d3869b;">32</span><span>] </span><span style="color:#fe8019;">= </span><span style="color:#b8bb26;">&quot;University of&quot;</span><span>;
+</span><span>
+</span><span>    </span><span style="font-style:italic;color:#928374;">// This is unsafe because s1 may not have enough space
+</span><span>    </span><span style="font-style:italic;color:#928374;">// to hold all the characters copied from s2.
+</span><span>    </span><span style="font-style:italic;color:#928374;">//strcpy(s1, s2);
+</span><span>
+</span><span>    </span><span style="font-style:italic;color:#928374;">// This doesn&#39;t necessarily null-terminate s1 if there isn&#39;t space.
+</span><span>    </span><span style="color:#fabd2f;">strncpy</span><span style="color:#fdf4c1;">(s1, s2, </span><span style="color:#fe8019;">sizeof</span><span style="color:#fdf4c1;">(s1))</span><span>;
+</span><span>    </span><span style="font-style:italic;color:#928374;">// So we explicitly terminate s1 by setting a null-terminator.
+</span><span>    s1[</span><span style="color:#d3869b;">4</span><span>] </span><span style="color:#fe8019;">= </span><span style="color:#b8bb26;">&#39;\0&#39;</span><span>;
+</span><span>
+</span><span>    </span><span style="color:#fabd2f;">printf</span><span style="color:#fdf4c1;">(</span><span style="color:#b8bb26;">&quot;</span><span style="color:#fdf4c1;">%s</span><span style="color:#b8bb26;">\n&quot;</span><span style="color:#fdf4c1;">, s1)</span><span>;
+</span><span>    </span><span style="color:#fabd2f;">printf</span><span style="color:#fdf4c1;">(</span><span style="color:#b8bb26;">&quot;</span><span style="color:#fdf4c1;">%s</span><span style="color:#b8bb26;">\n&quot;</span><span style="color:#fdf4c1;">, s2)</span><span>;
+</span><span>    </span><span style="color:#fa5c4b;">return </span><span style="color:#d3869b;">0</span><span>;
+</span><span>}
+</span></code></pre>
+<h4 id="string-concatenation">String concatenation</h4>
+<ul>
+<li>strcat(char* s1, char* s2)
+<ul>
+<li>unsafe function</li>
+<li><code>strncat(char* s1, char* s2, int n)</code>
+<ul>
+<li>n indicates maximum number of char not including the null terminator</li>
+<li>this function always add the null terminator</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<pre data-lang="c" style="background-color:#282828;color:#fdf4c1aa;" class="language-c "><code class="language-c" data-lang="c"><span style="color:#fa5c4b;">#include </span><span style="color:#b8bb26;">&lt;stdio.h&gt;
+</span><span style="color:#fa5c4b;">#include </span><span style="color:#b8bb26;">&lt;string.h&gt;
+</span><span>
+</span><span style="color:#fa5c4b;">int </span><span style="color:#8ec07c;">main</span><span>() {
+</span><span>    </span><span style="color:#fa5c4b;">char</span><span> s1[</span><span style="color:#d3869b;">30</span><span>];
+</span><span>    </span><span style="color:#fa5c4b;">char</span><span> s2[</span><span style="color:#d3869b;">14</span><span>] </span><span style="color:#fe8019;">= </span><span style="color:#b8bb26;">&quot;University of&quot;</span><span>;
+</span><span>    </span><span style="color:#fa5c4b;">char</span><span> s3[</span><span style="color:#d3869b;">15</span><span>] </span><span style="color:#fe8019;">= </span><span style="color:#b8bb26;">&quot; C Programming&quot;</span><span>;
+</span><span>    </span><span style="color:#fabd2f;">strcpy</span><span style="color:#fdf4c1;">(s1, s2)</span><span>;
+</span><span>    </span><span style="color:#fabd2f;">strncat</span><span style="color:#fdf4c1;">(s1, s3, </span><span style="color:#fe8019;">sizeof</span><span style="color:#fdf4c1;">(s1) </span><span style="color:#fe8019;">- </span><span style="color:#fabd2f;">strlen</span><span style="color:#fdf4c1;">(s1) </span><span style="color:#fe8019;">- </span><span style="color:#d3869b;">1</span><span style="color:#fdf4c1;">)</span><span>;
+</span><span>    </span><span style="color:#fabd2f;">printf</span><span style="color:#fdf4c1;">(</span><span style="color:#b8bb26;">&quot;</span><span style="color:#fdf4c1;">%s</span><span style="color:#b8bb26;">\n&quot;</span><span style="color:#fdf4c1;">, s1)</span><span>;
+</span><span>    </span><span style="color:#fa5c4b;">return </span><span style="color:#d3869b;">0</span><span>;
+</span><span>}
+</span></code></pre>
+<h4 id="searching-with-strings">Searching with Strings</h4>
+<ul>
+<li><code>char* strchr(const char* s, int c)</code>
+<ul>
+<li>returns a pointer to the character that was found</li>
+<li>or null if was not found in the string</li>
+</ul>
+</li>
+<li><code>char *strstr(const char *s1, const char *s2)</code>
+<ul>
+<li>if s2 is found in s1, returns the pointer to character of s1 that begins the match with s2</li>
+</ul>
+</li>
+</ul>
+<pre data-lang="c" style="background-color:#282828;color:#fdf4c1aa;" class="language-c "><code class="language-c" data-lang="c"><span style="color:#fa5c4b;">#include </span><span style="color:#b8bb26;">&lt;stdio.h&gt;
+</span><span style="color:#fa5c4b;">#include </span><span style="color:#b8bb26;">&lt;string.h&gt;
+</span><span>
+</span><span style="color:#fa5c4b;">int </span><span style="color:#8ec07c;">main</span><span>() {
+</span><span>    </span><span style="color:#fa5c4b;">char</span><span> s1[</span><span style="color:#d3869b;">30</span><span>] </span><span style="color:#fe8019;">= </span><span style="color:#b8bb26;">&quot;University of C Programming&quot;</span><span>;
+</span><span>    </span><span style="color:#fa5c4b;">char </span><span style="color:#fe8019;">*</span><span>p;
+</span><span>
+</span><span>    </span><span style="font-style:italic;color:#928374;">// find the index of the first &#39;v&#39;
+</span><span>    p </span><span style="color:#fe8019;">= </span><span style="color:#fabd2f;">strchr</span><span style="color:#fdf4c1;">(s1, </span><span style="color:#b8bb26;">&#39;v&#39;</span><span style="color:#fdf4c1;">)</span><span>;
+</span><span>    </span><span style="color:#fa5c4b;">if </span><span>(p </span><span style="color:#fe8019;">== </span><span style="color:#d3869b;">NULL</span><span>) {
+</span><span>        </span><span style="color:#fabd2f;">printf</span><span style="color:#fdf4c1;">(</span><span style="color:#b8bb26;">&quot;Character not found\n&quot;</span><span style="color:#fdf4c1;">)</span><span>;
+</span><span>    } </span><span style="color:#fa5c4b;">else </span><span>{
+</span><span>        </span><span style="color:#fabd2f;">printf</span><span style="color:#fdf4c1;">(</span><span style="color:#b8bb26;">&quot;Character found at index </span><span style="color:#fdf4c1;">%ld</span><span style="color:#b8bb26;">\n&quot;</span><span style="color:#fdf4c1;">, p </span><span style="color:#fe8019;">-</span><span style="color:#fdf4c1;"> s1)</span><span>;
+</span><span>    }
+</span><span>
+</span><span>    </span><span style="font-style:italic;color:#928374;">// find the first token (up to the first space)
+</span><span>    p </span><span style="color:#fe8019;">= </span><span style="color:#fabd2f;">strchr</span><span style="color:#fdf4c1;">(s1, </span><span style="color:#b8bb26;">&#39; &#39;</span><span style="color:#fdf4c1;">)</span><span>;
+</span><span>    </span><span style="color:#fa5c4b;">if </span><span>(p </span><span style="color:#fe8019;">!= </span><span style="color:#d3869b;">NULL</span><span>) {
+</span><span>        </span><span style="color:#fe8019;">*</span><span>p </span><span style="color:#fe8019;">= </span><span style="color:#b8bb26;">&#39;\0&#39;</span><span>;
+</span><span>    }
+</span><span>    </span><span style="color:#fabd2f;">printf</span><span style="color:#fdf4c1;">(</span><span style="color:#b8bb26;">&quot;</span><span style="color:#fdf4c1;">%s</span><span style="color:#b8bb26;">\n&quot;</span><span style="color:#fdf4c1;">, s1)</span><span>;
+</span><span>
+</span><span>    </span><span style="color:#fa5c4b;">return </span><span style="color:#d3869b;">0</span><span>;
+</span><span>}
+</span></code></pre>
+<h3 id="structs">Structs</h3>
+<h4 id="using-structs-in-functions">Using structs in functions</h4>
+<ul>
+<li>Difference between struct and array</li>
+</ul>
+<table><thead><tr><th></th><th>array</th><th>structure</th></tr></thead><tbody>
+<tr><td>data of some type</td><td>yes</td><td>not required</td></tr>
+<tr><td>declaration details</td><td>type and number of elements</td><td>types of members</td></tr>
+<tr><td>access via . . .</td><td>index notation</td><td>dot notation</td></tr>
+</tbody></table>
+<pre data-lang="c" style="background-color:#282828;color:#fdf4c1aa;" class="language-c "><code class="language-c" data-lang="c"><span style="color:#fa5c4b;">#include </span><span style="color:#b8bb26;">&lt;stdio.h&gt;
+</span><span style="color:#fa5c4b;">#include </span><span style="color:#b8bb26;">&lt;string.h&gt;
+</span><span>
+</span><span style="color:#fa5c4b;">int </span><span style="color:#8ec07c;">main</span><span>() {
+</span><span>    </span><span style="font-style:italic;color:#928374;">// Note that &quot;struct&quot; is required whenever we declare
+</span><span>    </span><span style="font-style:italic;color:#928374;">// a variable of a structure type:
+</span><span>    </span><span style="color:#fa5c4b;">struct </span><span style="color:#8ec07c;">student </span><span>{
+</span><span>        </span><span style="font-style:italic;color:#928374;">// Members of struct student:
+</span><span>        </span><span style="color:#fa5c4b;">char</span><span> first_name[</span><span style="color:#d3869b;">20</span><span>];
+</span><span>        </span><span style="color:#fa5c4b;">char</span><span> last_name[</span><span style="color:#d3869b;">20</span><span>];
+</span><span>        </span><span style="color:#fa5c4b;">int</span><span> year;
+</span><span>        </span><span style="color:#fa5c4b;">float</span><span> gpa;
+</span><span>    };
+</span><span>
+</span><span>    </span><span style="font-style:italic;color:#928374;">// good_student is of type &quot;struct student&quot;
+</span><span>    </span><span style="color:#fa5c4b;">struct</span><span> student good_student;
+</span><span>  
+</span><span>    </span><span style="font-style:italic;color:#928374;">// Initialize the members of the struct using dot notation:
+</span><span>    </span><span style="color:#fabd2f;">strcpy</span><span style="color:#fdf4c1;">(good_student.first_name, </span><span style="color:#b8bb26;">&quot;Jo&quot;</span><span style="color:#fdf4c1;">)</span><span>;
+</span><span>    </span><span style="color:#fabd2f;">strcpy</span><span style="color:#fdf4c1;">(good_student.last_name, </span><span style="color:#b8bb26;">&quot;Smith&quot;</span><span style="color:#fdf4c1;">)</span><span>;
+</span><span>    good_student.</span><span style="color:#fdf4c1;">year </span><span style="color:#fe8019;">= </span><span style="color:#d3869b;">2</span><span>;
+</span><span>    good_student.</span><span style="color:#fdf4c1;">gpa </span><span style="color:#fe8019;">= </span><span style="color:#d3869b;">3.2</span><span>;
+</span><span>  
+</span><span>    </span><span style="font-style:italic;color:#928374;">// Print the values of good_student&#39;s members:
+</span><span>    </span><span style="color:#fabd2f;">printf</span><span style="color:#fdf4c1;">(</span><span style="color:#b8bb26;">&quot;Name: </span><span style="color:#fdf4c1;">%s %s</span><span style="color:#b8bb26;">\n&quot;</span><span style="color:#fdf4c1;">,
+</span><span style="color:#fdf4c1;">           good_student.first_name, good_student.last_name)</span><span>;
+</span><span>    </span><span style="color:#fabd2f;">printf</span><span style="color:#fdf4c1;">(</span><span style="color:#b8bb26;">&quot;Year: </span><span style="color:#fdf4c1;">%d</span><span style="color:#b8bb26;">. GPA: </span><span style="color:#fdf4c1;">%.2f</span><span style="color:#b8bb26;">\n&quot;</span><span style="color:#fdf4c1;">, good_student.year, good_student.gpa)</span><span>;
+</span><span>  
+</span><span>    </span><span style="color:#fa5c4b;">return </span><span style="color:#d3869b;">0</span><span>;
+</span><span>}
+</span></code></pre>
+<h4 id="using-structs-in-functions-1">Using Structs in Functions</h4>
+<ul>
+<li>we know the typical array calls of functions</li>
+</ul>
+<pre data-lang="c" style="background-color:#282828;color:#fdf4c1aa;" class="language-c "><code class="language-c" data-lang="c"><span style="color:#fa5c4b;">#include </span><span style="color:#b8bb26;">&lt;stdio.h&gt;
+</span><span>
+</span><span style="font-style:italic;color:#928374;">/* Changes the value of the 0th element of int array numbers
+</span><span style="font-style:italic;color:#928374;"> * to 80. 
+</span><span style="font-style:italic;color:#928374;"> */
+</span><span style="color:#fa5c4b;">void </span><span style="color:#8ec07c;">change</span><span>(</span><span style="color:#fa5c4b;">int </span><span style="color:#fdf4c1;">numbers</span><span>[]) {
+</span><span>    numbers[</span><span style="color:#d3869b;">0</span><span>] </span><span style="color:#fe8019;">= </span><span style="color:#d3869b;">80</span><span>;
+</span><span>}
+</span><span>
+</span><span style="color:#fa5c4b;">int </span><span style="color:#8ec07c;">main</span><span>() {
+</span><span>    </span><span style="color:#fa5c4b;">int</span><span> my_array[</span><span style="color:#d3869b;">5</span><span>];
+</span><span>
+</span><span>    my_array[</span><span style="color:#d3869b;">0</span><span>] </span><span style="color:#fe8019;">= </span><span style="color:#d3869b;">40</span><span>;
+</span><span>    </span><span style="color:#fdf4c1;">change(my_array)</span><span>;
+</span><span>
+</span><span>    </span><span style="font-style:italic;color:#928374;">// The following prints 80 because &quot;change&quot; modifies the
+</span><span>    </span><span style="font-style:italic;color:#928374;">// *original* array, since the array was *not* copied
+</span><span>    </span><span style="font-style:italic;color:#928374;">// when passed as an argument:
+</span><span>    </span><span style="color:#fabd2f;">printf</span><span style="color:#fdf4c1;">(</span><span style="color:#b8bb26;">&quot;Element at index 0: </span><span style="color:#fdf4c1;">%d</span><span style="color:#b8bb26;">\n&quot;</span><span style="color:#fdf4c1;">, my_array[</span><span style="color:#d3869b;">0</span><span style="color:#fdf4c1;">])</span><span>;
+</span><span>  
+</span><span>    </span><span style="color:#fa5c4b;">return </span><span style="color:#d3869b;">0</span><span>;
+</span><span>}
+</span></code></pre>
+<ul>
+<li>However, you cannot do the same with structs
+<ul>
+<li>since passing strucut as parameter makes a new instance of that very struct (copies the struct)</li>
+<li>so, to send structs to function calls, we must send the pointers</li>
+</ul>
+</li>
+</ul>
+<pre data-lang="c" style="background-color:#282828;color:#fdf4c1aa;" class="language-c "><code class="language-c" data-lang="c"><span style="color:#fa5c4b;">#include </span><span style="color:#b8bb26;">&lt;stdio.h&gt;
+</span><span style="color:#fa5c4b;">#include </span><span style="color:#b8bb26;">&lt;string.h&gt;
+</span><span>
+</span><span style="color:#fa5c4b;">struct </span><span style="color:#8ec07c;">student </span><span>{
+</span><span>    </span><span style="color:#fa5c4b;">char</span><span> first_name[</span><span style="color:#d3869b;">20</span><span>];
+</span><span>    </span><span style="color:#fa5c4b;">char</span><span> last_name[</span><span style="color:#d3869b;">20</span><span>];
+</span><span>    </span><span style="color:#fa5c4b;">int</span><span> year;
+</span><span>    </span><span style="color:#fa5c4b;">float</span><span> gpa;
+</span><span>};
+</span><span>
+</span><span style="font-style:italic;color:#928374;">/* This version of change() operates on a *copy* of struct s,
+</span><span style="font-style:italic;color:#928374;">   not the original. This means that the print statement in main
+</span><span style="font-style:italic;color:#928374;">   will print:
+</span><span style="font-style:italic;color:#928374;">       first name if &quot;Jo&quot;
+</span><span style="font-style:italic;color:#928374;">       GPA is 2.1
+</span><span style="font-style:italic;color:#928374;">   ..since the original good_student is not modified by change().
+</span><span style="font-style:italic;color:#928374;">
+</span><span style="font-style:italic;color:#928374;">====
+</span><span style="font-style:italic;color:#928374;">
+</span><span style="font-style:italic;color:#928374;">void change(struct student s) {
+</span><span style="font-style:italic;color:#928374;">    s.gpa = 4.0;
+</span><span style="font-style:italic;color:#928374;">    strcpy(s.first_name, &quot;Adam&quot;);
+</span><span style="font-style:italic;color:#928374;">}
+</span><span style="font-style:italic;color:#928374;">*/
+</span><span>
+</span><span style="font-style:italic;color:#928374;">/* Changes the values of a struct student&#39;s members. 
+</span><span style="font-style:italic;color:#928374;">   This function operates on the *original* struct, rather
+</span><span style="font-style:italic;color:#928374;">   than on a copy of the struct. */
+</span><span style="color:#fa5c4b;">void </span><span style="color:#8ec07c;">change</span><span>(</span><span style="color:#fa5c4b;">struct</span><span> student </span><span style="color:#fe8019;">*</span><span style="color:#fdf4c1;">s</span><span>) {
+</span><span>    </span><span style="color:#fabd2f;">strcpy</span><span style="color:#fdf4c1;">((</span><span style="color:#fe8019;">*</span><span style="color:#fdf4c1;">s).first_name, </span><span style="color:#b8bb26;">&quot;Adam&quot;</span><span style="color:#fdf4c1;">)</span><span>;
+</span><span>    (</span><span style="color:#fe8019;">*</span><span>s).</span><span style="color:#fdf4c1;">gpa </span><span style="color:#fe8019;">= </span><span style="color:#d3869b;">4.0</span><span>;
+</span><span>}
+</span><span>
+</span><span style="color:#fa5c4b;">int </span><span style="color:#8ec07c;">main</span><span>() {
+</span><span>    </span><span style="color:#fa5c4b;">struct</span><span> student good_student;
+</span><span> 
+</span><span>    </span><span style="color:#fabd2f;">strcpy</span><span style="color:#fdf4c1;">(good_student.first_name, </span><span style="color:#b8bb26;">&quot;Jo&quot;</span><span style="color:#fdf4c1;">)</span><span>; 
+</span><span>    good_student.</span><span style="color:#fdf4c1;">gpa </span><span style="color:#fe8019;">= </span><span style="color:#d3869b;">2.1</span><span>;
+</span><span>
+</span><span>    </span><span style="font-style:italic;color:#928374;">// Passing address of good_student:
+</span><span>    </span><span style="color:#fdf4c1;">change(</span><span style="color:#fe8019;">&amp;</span><span style="color:#fdf4c1;">good_student)</span><span>;
+</span><span>    
+</span><span>    </span><span style="color:#fabd2f;">printf</span><span style="color:#fdf4c1;">(</span><span style="color:#b8bb26;">&quot;first name is </span><span style="color:#fdf4c1;">%s</span><span style="color:#b8bb26;">\n&quot;</span><span style="color:#fdf4c1;">,
+</span><span style="color:#fdf4c1;">                good_student.first_name)</span><span>;
+</span><span>    </span><span style="color:#fabd2f;">printf</span><span style="color:#fdf4c1;">(</span><span style="color:#b8bb26;">&quot;GPA is </span><span style="color:#fdf4c1;">%f</span><span style="color:#b8bb26;">\n&quot;</span><span style="color:#fdf4c1;">, good_student.gpa)</span><span>;
+</span><span>  
+</span><span>    </span><span style="color:#fa5c4b;">return </span><span style="color:#d3869b;">0</span><span>;
+</span><span>}
+</span></code></pre>
+<h4 id="pointers-to-structs">Pointers to Structs</h4>
+<ul>
+<li>Anything we know about pointers, applies to structs as well
+<ul>
+<li>declate pointers to point to struct</li>
+<li>change structs through their pointers</li>
+<li>pass pointers to structs as functions</li>
+</ul>
+</li>
+</ul>
+<pre data-lang="c" style="background-color:#282828;color:#fdf4c1aa;" class="language-c "><code class="language-c" data-lang="c"><span style="color:#fa5c4b;">#include </span><span style="color:#b8bb26;">&lt;stdio.h&gt;
+</span><span style="color:#fa5c4b;">#include </span><span style="color:#b8bb26;">&lt;string.h&gt;
+</span><span>
+</span><span style="color:#fa5c4b;">int </span><span style="color:#8ec07c;">main</span><span>() {
+</span><span>    </span><span style="color:#fa5c4b;">struct </span><span style="color:#8ec07c;">student </span><span>{
+</span><span>        </span><span style="color:#fa5c4b;">char</span><span> first_name[</span><span style="color:#d3869b;">20</span><span>];
+</span><span>        </span><span style="color:#fa5c4b;">char</span><span> last_name[</span><span style="color:#d3869b;">20</span><span>];
+</span><span>        </span><span style="color:#fa5c4b;">int</span><span> year;
+</span><span>        </span><span style="color:#fa5c4b;">float</span><span> gpa;
+</span><span>    };
+</span><span>  
+</span><span>    </span><span style="color:#fa5c4b;">struct</span><span> student s;
+</span><span>
+</span><span>    </span><span style="font-style:italic;color:#928374;">// Cannot be dereferenced until it points to
+</span><span>    </span><span style="font-style:italic;color:#928374;">// allocated space:
+</span><span>    </span><span style="color:#fa5c4b;">struct</span><span> student </span><span style="color:#fe8019;">*</span><span>p;
+</span><span>  
+</span><span>    </span><span style="font-style:italic;color:#928374;">// Initialize the members of s:
+</span><span>    </span><span style="color:#fabd2f;">strcpy</span><span style="color:#fdf4c1;">(s.first_name, </span><span style="color:#b8bb26;">&quot;Jo&quot;</span><span style="color:#fdf4c1;">)</span><span>;
+</span><span>    </span><span style="color:#fabd2f;">strcpy</span><span style="color:#fdf4c1;">(s.last_name, </span><span style="color:#b8bb26;">&quot;Smith&quot;</span><span style="color:#fdf4c1;">)</span><span>;
+</span><span>    s.</span><span style="color:#fdf4c1;">year </span><span style="color:#fe8019;">= </span><span style="color:#d3869b;">2</span><span>;
+</span><span>    s.</span><span style="color:#fdf4c1;">gpa </span><span style="color:#fe8019;">= </span><span style="color:#d3869b;">3.2</span><span>;
+</span><span>  
+</span><span>    </span><span style="font-style:italic;color:#928374;">// p now points to the address of struct student s:
+</span><span>    p </span><span style="color:#fe8019;">= &amp;</span><span>s;
+</span><span>
+</span><span>    </span><span style="font-style:italic;color:#928374;">// Dereference p to get the struct, then use the
+</span><span>    </span><span style="font-style:italic;color:#928374;">// dot operator to access the &quot;gpa&quot; member:
+</span><span>    (</span><span style="color:#fe8019;">*</span><span>p).</span><span style="color:#fdf4c1;">gpa </span><span style="color:#fe8019;">= </span><span style="color:#d3869b;">3.8</span><span>;
+</span><span>
+</span><span>    p-&gt;year </span><span style="color:#fe8019;">= </span><span style="color:#d3869b;">1</span><span>;    </span><span style="font-style:italic;color:#928374;">// this is the same as (*p).year = 1;
+</span><span>    </span><span style="color:#fabd2f;">strcpy</span><span style="color:#fdf4c1;">(p-&gt;first_name, </span><span style="color:#b8bb26;">&quot;Henrick&quot;</span><span style="color:#fdf4c1;">)</span><span>;
+</span><span>  
+</span><span>    </span><span style="color:#fabd2f;">printf</span><span style="color:#fdf4c1;">(</span><span style="color:#b8bb26;">&quot;Name: </span><span style="color:#fdf4c1;">%s %s</span><span style="color:#b8bb26;">\n&quot;</span><span style="color:#fdf4c1;">,
+</span><span style="color:#fdf4c1;">           s.first_name, s.last_name)</span><span>;
+</span><span>    </span><span style="color:#fabd2f;">printf</span><span style="color:#fdf4c1;">(</span><span style="color:#b8bb26;">&quot;Year: </span><span style="color:#fdf4c1;">%d</span><span style="color:#b8bb26;">. GPA: </span><span style="color:#fdf4c1;">%.2f</span><span style="color:#b8bb26;">\n&quot;</span><span style="color:#fdf4c1;">, s.year, s.gpa)</span><span>;
+</span><span>  
+</span><span>    </span><span style="color:#fa5c4b;">return </span><span style="color:#d3869b;">0</span><span>;
+</span><span>}
+</span></code></pre>
+<h3 id="dynmaic-memory-and-strings">Dynmaic memory and strings</h3>
+<ul>
+<li>these are just normal pointer stuff</li>
+</ul>
+<h3 id="linked-structures-and-iteration">Linked Structures and Iteration</h3>
+<ul>
+<li>simple linked list stuff</li>
+</ul>
+<h2 id="lecture-notes">Lecture Notes</h2>
+<ul>
+<li>on the stack</li>
+</ul>
+<pre data-lang="c" style="background-color:#282828;color:#fdf4c1aa;" class="language-c "><code class="language-c" data-lang="c"><span style="color:#fa5c4b;">char</span><span> name[</span><span style="color:#d3869b;">32</span><span>];
+</span><span style="color:#fa5c4b;">char</span><span> greeting[</span><span style="color:#d3869b;">6</span><span>] </span><span style="color:#fe8019;">= </span><span style="color:#b8bb26;">&quot;Hello&quot;</span><span>;
+</span></code></pre>
+<ul>
+<li>on the heap</li>
+</ul>
+<pre data-lang="c" style="background-color:#282828;color:#fdf4c1aa;" class="language-c "><code class="language-c" data-lang="c"><span style="color:#fa5c4b;">char </span><span style="color:#fe8019;">*</span><span>name </span><span style="color:#fe8019;">= </span><span style="color:#fabd2f;">malloc</span><span style="color:#fdf4c1;">(</span><span style="color:#fe8019;">sizeof</span><span style="color:#fdf4c1;">(</span><span style="color:#fa5c4b;">char</span><span style="color:#fdf4c1;">) </span><span style="color:#fe8019;">* </span><span style="color:#d3869b;">32</span><span style="color:#fdf4c1;">)</span><span>;
+</span></code></pre>
+<ul>
+<li>in read only </li>
+</ul>
+<pre data-lang="c" style="background-color:#282828;color:#fdf4c1aa;" class="language-c "><code class="language-c" data-lang="c"><span style="color:#fa5c4b;">char </span><span style="color:#fe8019;">*</span><span>name </span><span style="color:#fe8019;">= </span><span style="color:#b8bb26;">&quot;David&quot;
+</span></code></pre>
+<h2 id="additional-notes-1">Additional Notes</h2>
+<ul>
+<li>if struct char is declared as string literal, you do not need to do strcpy, but only just assign it</li>
+</ul>
+<hr />
+<h1 id="week-5">Week 5</h1>
+<h2 id="pcrs-4">PCRS</h2>
+<h3 id="writing-to-files">Writing to Files</h3>
+<ul>
+<li><code>output_file = fopen(&quot;myfile.txt&quot;, &quot;w&quot; or &quot;a&quot;)</code>
+<ul>
+<li><code>w</code> means writing</li>
+<li><code>a</code> means appending to end of the file</li>
+</ul>
+</li>
+<li>always do error checking</li>
+<li><code>fprintf</code> writes the given input into the stream</li>
+</ul>
+<pre data-lang="c" style="background-color:#282828;color:#fdf4c1aa;" class="language-c "><code class="language-c" data-lang="c"><span style="color:#fa5c4b;">#include </span><span style="color:#b8bb26;">&lt;stdio.h&gt;
+</span><span>
+</span><span style="color:#fa5c4b;">int </span><span style="color:#8ec07c;">main</span><span>() {
+</span><span>    FILE </span><span style="color:#fe8019;">*</span><span>output_file;
+</span><span>    </span><span style="color:#fa5c4b;">int</span><span> error;
+</span><span>    </span><span style="color:#fa5c4b;">int</span><span> total </span><span style="color:#fe8019;">= </span><span style="color:#d3869b;">50</span><span>;
+</span><span>    </span><span style="color:#fa5c4b;">float</span><span> small_number </span><span style="color:#fe8019;">= </span><span style="color:#d3869b;">0.125</span><span>;
+</span><span>  
+</span><span>    output_file </span><span style="color:#fe8019;">= </span><span style="color:#fabd2f;">fopen</span><span style="color:#fdf4c1;">(</span><span style="color:#b8bb26;">&quot;myfile.txt&quot;</span><span style="color:#fdf4c1;">, </span><span style="color:#b8bb26;">&quot;w&quot;</span><span style="color:#fdf4c1;">)</span><span>;
+</span><span>    </span><span style="color:#fa5c4b;">if </span><span>(output_file </span><span style="color:#fe8019;">== </span><span style="color:#d3869b;">NULL</span><span>) {
+</span><span>        </span><span style="color:#fabd2f;">fprintf</span><span style="color:#fdf4c1;">(stderr, </span><span style="color:#b8bb26;">&quot;Error opening file\n&quot;</span><span style="color:#fdf4c1;">)</span><span>;
+</span><span>        </span><span style="color:#fa5c4b;">return </span><span style="color:#d3869b;">1</span><span>;
+</span><span>    }
+</span><span>  
+</span><span>    </span><span style="color:#fabd2f;">fprintf</span><span style="color:#fdf4c1;">(output_file, </span><span style="color:#b8bb26;">&quot;This will be the first line in the file\n&quot;</span><span style="color:#fdf4c1;">)</span><span>;
+</span><span>    </span><span style="color:#fabd2f;">fprintf</span><span style="color:#fdf4c1;">(output_file, </span><span style="color:#b8bb26;">&quot;The integer is </span><span style="color:#fdf4c1;">%d</span><span style="color:#b8bb26;">\n&quot;</span><span style="color:#fdf4c1;">, total)</span><span>;
+</span><span>    </span><span style="color:#fabd2f;">fprintf</span><span style="color:#fdf4c1;">(output_file, </span><span style="color:#b8bb26;">&quot;The small float number is </span><span style="color:#fdf4c1;">%f</span><span style="color:#b8bb26;">\n&quot;</span><span style="color:#fdf4c1;">, small_number)</span><span>;
+</span><span>  
+</span><span>    error </span><span style="color:#fe8019;">= </span><span style="color:#fabd2f;">fclose</span><span style="color:#fdf4c1;">(output_file)</span><span>;
+</span><span>    </span><span style="color:#fa5c4b;">if </span><span>(error </span><span style="color:#fe8019;">!= </span><span style="color:#d3869b;">0</span><span>) {
+</span><span>        </span><span style="color:#fabd2f;">fprintf</span><span style="color:#fdf4c1;">(stderr, </span><span style="color:#b8bb26;">&quot;fclose failed\n&quot;</span><span style="color:#fdf4c1;">)</span><span>;
+</span><span>        </span><span style="color:#fa5c4b;">return </span><span style="color:#d3869b;">1</span><span>;
+</span><span>    }
+</span><span>
+</span><span>    </span><span style="color:#fa5c4b;">return </span><span style="color:#d3869b;">0</span><span>;
+</span><span>}
+</span></code></pre>
+<h3 id="putting-it-all-together">Putting it all together</h3>
+<pre data-lang="c" style="background-color:#282828;color:#fdf4c1aa;" class="language-c "><code class="language-c" data-lang="c"><span style="color:#fa5c4b;">#include </span><span style="color:#b8bb26;">&lt;stdio.h&gt;
+</span><span>
+</span><span style="color:#fa5c4b;">int </span><span style="color:#8ec07c;">main</span><span>() {
+</span><span>    FILE </span><span style="color:#fe8019;">*</span><span>scores_file, </span><span style="color:#fe8019;">*</span><span>output_file;
+</span><span>    </span><span style="color:#fa5c4b;">int</span><span> error, total;
+</span><span>    </span><span style="color:#fa5c4b;">char</span><span> name[</span><span style="color:#d3869b;">81</span><span>];
+</span><span>  
+</span><span>    scores_file </span><span style="color:#fe8019;">= </span><span style="color:#fabd2f;">fopen</span><span style="color:#fdf4c1;">(</span><span style="color:#b8bb26;">&quot;top10.txt&quot;</span><span style="color:#fdf4c1;">, </span><span style="color:#b8bb26;">&quot;r&quot;</span><span style="color:#fdf4c1;">)</span><span>;
+</span><span>    </span><span style="color:#fa5c4b;">if </span><span>(scores_file </span><span style="color:#fe8019;">== </span><span style="color:#d3869b;">NULL</span><span>) {
+</span><span>        </span><span style="color:#fabd2f;">fprintf</span><span style="color:#fdf4c1;">(stderr, </span><span style="color:#b8bb26;">&quot;Error opening input file\n&quot;</span><span style="color:#fdf4c1;">)</span><span>;
+</span><span>        </span><span style="color:#fa5c4b;">return </span><span style="color:#d3869b;">1</span><span>;
+</span><span>    }
+</span><span>  
+</span><span>    output_file </span><span style="color:#fe8019;">= </span><span style="color:#fabd2f;">fopen</span><span style="color:#fdf4c1;">(</span><span style="color:#b8bb26;">&quot;names.txt&quot;</span><span style="color:#fdf4c1;">, </span><span style="color:#b8bb26;">&quot;w&quot;</span><span style="color:#fdf4c1;">)</span><span>;
+</span><span>    </span><span style="color:#fa5c4b;">if </span><span>(output_file </span><span style="color:#fe8019;">== </span><span style="color:#d3869b;">NULL</span><span>) {
+</span><span>        </span><span style="color:#fabd2f;">fprintf</span><span style="color:#fdf4c1;">(stderr, </span><span style="color:#b8bb26;">&quot;Error opening output file\n&quot;</span><span style="color:#fdf4c1;">)</span><span>;
+</span><span>        </span><span style="color:#fa5c4b;">return </span><span style="color:#d3869b;">1</span><span>;
+</span><span>    }
+</span><span>  
+</span><span>    </span><span style="color:#fa5c4b;">while </span><span>(</span><span style="color:#fabd2f;">fscanf</span><span style="color:#fdf4c1;">(scores_file, </span><span style="color:#b8bb26;">&quot;</span><span style="color:#fdf4c1;">%80s %d</span><span style="color:#b8bb26;">&quot;</span><span style="color:#fdf4c1;">, name, </span><span style="color:#fe8019;">&amp;</span><span style="color:#fdf4c1;">total) </span><span style="color:#fe8019;">== </span><span style="color:#d3869b;">2</span><span>) {
+</span><span>        </span><span style="color:#fabd2f;">printf</span><span style="color:#fdf4c1;">(</span><span style="color:#b8bb26;">&quot;Name: </span><span style="color:#fdf4c1;">%s</span><span style="color:#b8bb26;">. Score: </span><span style="color:#fdf4c1;">%d</span><span style="color:#b8bb26;">.\n&quot;</span><span style="color:#fdf4c1;">, name, total)</span><span>;
+</span><span>        </span><span style="color:#fabd2f;">fprintf</span><span style="color:#fdf4c1;">(output_file, </span><span style="color:#b8bb26;">&quot;</span><span style="color:#fdf4c1;">%s</span><span style="color:#b8bb26;">\n&quot;</span><span style="color:#fdf4c1;">, name)</span><span>;
+</span><span>    }
+</span><span>  
+</span><span>    error </span><span style="color:#fe8019;">= </span><span style="color:#fabd2f;">fclose</span><span style="color:#fdf4c1;">(scores_file)</span><span>;
+</span><span>    </span><span style="color:#fa5c4b;">if </span><span>(error </span><span style="color:#fe8019;">!= </span><span style="color:#d3869b;">0</span><span>) {
+</span><span>        </span><span style="color:#fabd2f;">fprintf</span><span style="color:#fdf4c1;">(stderr, </span><span style="color:#b8bb26;">&quot;fclose failed on input file\n&quot;</span><span style="color:#fdf4c1;">)</span><span>;
+</span><span>        </span><span style="color:#fa5c4b;">return </span><span style="color:#d3869b;">1</span><span>;
+</span><span>    }
+</span><span>
+</span><span>    error </span><span style="color:#fe8019;">= </span><span style="color:#fabd2f;">fclose</span><span style="color:#fdf4c1;">(output_file)</span><span>;
+</span><span>    </span><span style="color:#fa5c4b;">if </span><span>(error </span><span style="color:#fe8019;">!= </span><span style="color:#d3869b;">0</span><span>) {
+</span><span>        </span><span style="color:#fabd2f;">fprintf</span><span style="color:#fdf4c1;">(stderr, </span><span style="color:#b8bb26;">&quot;fclose failed on output file\n&quot;</span><span style="color:#fdf4c1;">)</span><span>;
+</span><span>        </span><span style="color:#fa5c4b;">return </span><span style="color:#d3869b;">1</span><span>;
+</span><span>    }
+</span><span>
+</span><span>    </span><span style="color:#fa5c4b;">return </span><span style="color:#d3869b;">0</span><span>;
+</span><span>}
+</span></code></pre>
+<ul>
+<li>for <code>fclose</code>
+<ul>
+<li>return 1: error</li>
+<li>return 0: success</li>
+</ul>
+</li>
+</ul>
+<h3 id="low-level-io">Low Level IO</h3>
+<ul>
+<li>not all files are text files</li>
+<li>but we handle them similarly
+<ul>
+<li><code>output_file = fopen(&quot;testing.txt&quot;, &quot;r&quot;)</code></li>
+<li><code>output_file = fopen(&quot;testing.dat&quot;, &quot;rb&quot;)</code>
+<ul>
+<li>include that letter b</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Writing to binary files
+<ul>
+<li><code>fwrite(const void *ptr, size_t size, size_t nmemb, FILE *stream)</code>
+<ul>
+<li>if return 1: success</li>
+<li>if return 0: failure?</li>
+</ul>
+</li>
+<li><code>const void *ptr</code>: pointer to the data that we want to write to the file. This is typically the starting address of an array, but can also be a pointer to an individual variable if we want to write just one value.</li>
+<li><code>size_t size</code>: size of each element that we're writing to the file.</li>
+<li><code>size_t nmemb</code>: number of elements that we are writing to the file. For an individual variable, the third parameter is one. For an array, it's typically the number of elements in the array.</li>
+<li><code>FILE *stream</code>: file pointer to which we will write. That file pointer must refer to a stream open in binary mode.</li>
+</ul>
+</li>
+</ul>
+<h3 id="complier-toolchain">Complier Toolchain</h3>
+<ul>
+<li>Compilation process happens in a single step
+<ul>
+<li><strong>Compiler</strong> is any program that translates one language to another language</li>
+</ul>
+</li>
+<li>However gcc must work on many different systems (Linux, windows, etc)</li>
+<li>Compiler looks like the following </li>
+</ul>
+<pre style="background-color:#282828;color:#fdf4c1aa;"><code><span>flowchart LR
+</span><span>	id1[Source Program]--&gt;id2[Lexical Analysis]
+</span><span>	id2[Lexical Analysis]--&gt;|get Token|id3[Syntax Analysis]
+</span><span>	id3[Syntax Analysis]--&gt;|Next Token|id2[Lexical Analysis]
+</span><span>	id3[Syntax Analysis]--&gt;|Abstract Syntax Tree|id4[Semantic Analysis]
+</span><span>	id4[Semantic Analysis]--&gt;|Modified AST|id5[Code Generation]
+</span><span>	id6[Code Generation]--&gt;|Assembly|id7[Executable Program]
+</span></code></pre>
+<ul>
+<li>you can get the assembly file of the program by simply running <code>gcc -S helloworld.c</code>
+<ul>
+<li>makes <code>helloworld.s</code> assembly file</li>
+</ul>
+</li>
+<li>The compiler runs in 3 phases
+<ul>
+<li><strong>Frontend</strong>: translates the source code into a largely language independent intermediate representation
+<ul>
+<li>gcc transforms language into gimple and generic</li>
+<li>think of them as AST</li>
+</ul>
+</li>
+<li><strong>Middle End</strong>: optimizing your code. </li>
+<li><strong>Backend</strong>: translates the intermediate language into the aseembly language that the computer can run
+<ul>
+<li>produces assembly code, not .out file</li>
+<li>must convert it to executable</li>
+<li>this is where <strong>assembler</strong> comes in</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Assembler
+<ul>
+<li>we can invoke the assembler directly by using the command <code>as helloworld.s -o helloworld</code></li>
+<li>makes an object file <code>helloworld.o</code></li>
+<li>to produce an executable, simply execute <code>gcc helloworld.s</code> 
+<ul>
+<li>produces <code>a.out</code></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Now, we must link 
+<ul>
+<li>the executable is only specific to type of machine, operating system, and even the configuration</li>
+</ul>
+</li>
+<li>Loader
+<ul>
+<li>executable must be loaded into memory when executed</li>
+</ul>
+</li>
+</ul>
+<h3 id="header-files">Header files</h3>
+<ul>
+<li>example: <code>gcc compare_sorts.c sorts.c</code></li>
+<li>when multiple files are required, each files are compiled and assembled seperately. </li>
+<li>then object files are combined during the linking phase</li>
+<li>other way to do it is (<strong>seperate compilation</strong>)</li>
+</ul>
+<pre data-lang="shell" style="background-color:#282828;color:#fdf4c1aa;" class="language-shell "><code class="language-shell" data-lang="shell"><span>&gt; gcc -c compare_sorts.c
+</span><span>&gt; gcc -c sorts.c
+</span><span>&gt; ls *.o
+</span><span>compare_sorts.o sorts.o
+</span><span>&gt; gcc compare_sorts.o sort.o
+</span></code></pre>
+<ul>
+<li>Seperate compilation has both pros and con
+<ul>
+<li>Pros: small change in one file --&gt; just recompile that one file and link it again</li>
+<li>Con: type change in one file --&gt; error not detected, most likely seg fault
+<ul>
+<li>to avoid this, we use a header file</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Header file
+<ul>
+<li>Type of interface
+<ul>
+<li>tells what functions do and what types they require</li>
+<li>ends with <code>.h</code> syntax</li>
+<li>include it in your c files by <code>include &quot;sorts.h&quot;</code></li>
+</ul>
+</li>
+<li>After initializing in both files gives you duplicate error
+<ul>
+<li>Seperately compiled, they are fine</li>
+<li>during linking phase, not fine</li>
+<li>use <code>extern</code> creates name of the variables without actually defining space for variables</li>
+<li>if you want to declare same named variables in each file, use <code>static</code> in global field</li>
+</ul>
+</li>
+<li>Use guard statements</li>
+</ul>
+</li>
+</ul>
+<pre data-lang="c" style="background-color:#282828;color:#fdf4c1aa;" class="language-c "><code class="language-c" data-lang="c"><span style="color:#fa5c4b;">#ifdef</span><span> SORTS_H
+</span><span style="color:#fa5c4b;">#define </span><span style="color:#8ec07c;">SORtS_H
+</span></code></pre>
+<ul>
+<li>Some more notes about static 
+<ul>
+<li><code>static</code> , when used in local, means variable should keep value across function execution</li>
+</ul>
+</li>
+</ul>
+<h3 id="makefile">Makefile</h3>
+<ul>
+<li>lmao nope</li>
+</ul>
+<h3 id="lecture-notes-1">Lecture Notes</h3>
+<h4 id="five-standard-actions">Five Standard Actions</h4>
+<ul>
+<li>Open a file</li>
+</ul>
+<pre data-lang="c" style="background-color:#282828;color:#fdf4c1aa;" class="language-c "><code class="language-c" data-lang="c"><span>FILE </span><span style="color:#fe8019;">*</span><span style="color:#8ec07c;">fopen</span><span>(</span><span style="color:#fa5c4b;">const char </span><span style="color:#fe8019;">*</span><span style="color:#fdf4c1;">pathname</span><span>, </span><span style="color:#fa5c4b;">const char </span><span style="color:#fe8019;">*</span><span style="color:#fdf4c1;">mode</span><span>)
+</span></code></pre>
+<ul>
+<li>Read from a file</li>
+</ul>
+<pre data-lang="c" style="background-color:#282828;color:#fdf4c1aa;" class="language-c "><code class="language-c" data-lang="c"><span style="font-style:italic;color:#928374;">// Text I/O  
+</span><span style="color:#fa5c4b;">int </span><span style="color:#8ec07c;">fscanf</span><span>(FILE </span><span style="color:#fe8019;">*</span><span style="color:#fdf4c1;">stream</span><span>, </span><span style="color:#fa5c4b;">const char </span><span style="color:#fe8019;">*</span><span style="color:#fdf4c1;">format</span><span>, </span><span style="color:#fe8019;">...</span><span>)  
+</span><span style="color:#fa5c4b;">char </span><span style="color:#fe8019;">*</span><span style="color:#8ec07c;">fgets</span><span>(</span><span style="color:#fa5c4b;">char </span><span style="color:#fe8019;">*</span><span style="color:#fdf4c1;">s</span><span>, </span><span style="color:#fa5c4b;">int </span><span style="color:#fdf4c1;">size</span><span>, FILE </span><span style="color:#fe8019;">*</span><span style="color:#fdf4c1;">stream</span><span>)  
+</span><span>  
+</span><span style="font-style:italic;color:#928374;">// Binary I/O  
+</span><span style="color:#fabd2f;">size_t </span><span style="color:#8ec07c;">fread</span><span>(</span><span style="color:#fa5c4b;">void </span><span style="color:#fe8019;">*</span><span style="color:#fdf4c1;">ptr</span><span>, </span><span style="color:#fabd2f;">size_t </span><span style="color:#fdf4c1;">size</span><span>, </span><span style="color:#fabd2f;">size_t </span><span style="color:#fdf4c1;">nmemb</span><span>, FILE </span><span style="color:#fe8019;">*</span><span style="color:#fdf4c1;">stream</span><span>)
+</span></code></pre>
+<ul>
+<li>Write to a file</li>
+</ul>
+<pre data-lang="c" style="background-color:#282828;color:#fdf4c1aa;" class="language-c "><code class="language-c" data-lang="c"><span style="font-style:italic;color:#928374;">// Text I/O  
+</span><span style="color:#fa5c4b;">int </span><span style="color:#8ec07c;">fprintf</span><span>(FILE </span><span style="color:#fe8019;">*</span><span style="color:#fdf4c1;">stream</span><span>, </span><span style="color:#fa5c4b;">const char </span><span style="color:#fe8019;">*</span><span style="color:#fdf4c1;">format</span><span>, </span><span style="color:#fe8019;">...</span><span>)  
+</span><span>  
+</span><span style="font-style:italic;color:#928374;">// Binary I/O  
+</span><span style="color:#fabd2f;">size_t </span><span style="color:#8ec07c;">fwrite</span><span>(</span><span style="color:#fa5c4b;">const void </span><span style="color:#fe8019;">*</span><span style="color:#fdf4c1;">ptr</span><span>, </span><span style="color:#fabd2f;">size_t </span><span style="color:#fdf4c1;">size</span><span>, </span><span style="color:#fabd2f;">size_t </span><span style="color:#fdf4c1;">nmemb</span><span>, FILE </span><span style="color:#fe8019;">*</span><span style="color:#fdf4c1;">stream</span><span>)
+</span></code></pre>
+<ul>
+<li>Change position in a file</li>
+</ul>
+<pre data-lang="c" style="background-color:#282828;color:#fdf4c1aa;" class="language-c "><code class="language-c" data-lang="c"><span style="color:#fa5c4b;">int </span><span style="color:#8ec07c;">fseek</span><span>(FILE </span><span style="color:#fe8019;">*</span><span style="color:#fdf4c1;">stream</span><span>, </span><span style="color:#fa5c4b;">long </span><span style="color:#fdf4c1;">offset</span><span>, </span><span style="color:#fa5c4b;">int </span><span style="color:#fdf4c1;">whence</span><span>)
+</span></code></pre>
+<ul>
+<li>Close a file</li>
+</ul>
+<pre data-lang="c" style="background-color:#282828;color:#fdf4c1aa;" class="language-c "><code class="language-c" data-lang="c"><span style="color:#fa5c4b;">int </span><span style="color:#8ec07c;">fclose</span><span>(FILE </span><span style="color:#fe8019;">*</span><span style="color:#fdf4c1;">stream</span><span>)
+</span></code></pre>
+<ul>
+<li>Inspecting the executable using <code>odjump</code>
+<ul>
+<li>Reading all section metadata:</li>
+</ul>
+</li>
+</ul>
+<pre data-lang="shell" style="background-color:#282828;color:#fdf4c1aa;" class="language-shell "><code class="language-shell" data-lang="shell"><span>$ objdump --wide --section-headers &lt;FILE&gt;
+</span></code></pre>
+<h1 id="week-6">Week 6</h1>
+<h2 id="pcrs-5">PCRS</h2>
+<h3 id=""></h3>
+<h1 id="for-midterm">For Midterm</h1>
+<h2 id="c-function-prototypes">C function prototypes</h2>
+<ul>
+<li><code>int fclose(FILE *stream)</code>
+<ul>
+<li>parameters
+<ul>
+<li><code>stream</code> - pointer to the FILE object that specifies stream to be closed</li>
+</ul>
+</li>
+<li>return value
+<ul>
+<li>if successful, return 0</li>
+<li>if not, return EOF</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><code>char fgets(char *str, int n, FILE stream)</code>
+<ul>
+<li>parameters
+<ul>
+<li><code>str</code> - pointer to an array where string read is stored</li>
+<li><code>n</code> - maximum number of characters to be read (including final null character)
+<ul>
+<li>so, be careful, probably have to do <code>fgets(s, len + 1, fp)</code></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>return value
+<ul>
+<li>if successful, returns str pointer</li>
+<li>if not, NULL</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><code>FILE fopen(const char *file, const char *mode)</code>
+<ul>
+<li>parameters
+<ul>
+<li><code>filename</code> - This is the C string containing the name of the file to be opened.</li>
+<li><code>mode</code> - This is the C string containing a file access mode.
+<ul>
+<li><code>r</code> : opens file for reading. File must exist</li>
+<li><code>w</code>: Creates an empty file for writing.</li>
+<li><code>a</code>: Appends to a file. Writing operations, append data at the end of the file. The file is created if it does not exist.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>return value
+<ul>
+<li>if successful, returns FILE pointer</li>
+<li>if not, returns NULL</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><code>size_t fread(void *ptr, size t size, size t nmemb, FILE *stream)</code>
+<ul>
+<li>parameters
+<ul>
+<li><code>ptr</code> - pointer to a block of memory </li>
+<li><code>size</code> - size in bytes of each element to be read</li>
+<li><code>nmemb</code> - number of elements, each one with a size of <strong>size</strong> bytes</li>
+<li><code>stream</code> - pointer to a FILE object that specifies an input stream</li>
+</ul>
+</li>
+<li>return value
+<ul>
+<li>if successful, total number of elements</li>
+<li>if not, EOF</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><code>int fscanf(FILE *restrict stream, const char *restrict format, ...)</code>
+<ul>
+<li>return value
+<ul>
+<li>if successful, total number of elements</li>
+<li>if not, EOF</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><code>int fseek(FILE *stream, long offset, int whence)</code>
+<ul>
+<li>parameters
+<ul>
+<li><strong>stream</strong> − This is the pointer to a FILE object that identifies the stream.</li>
+<li><strong>offset</strong> − This is the number of bytes to offset from whence.</li>
+<li><strong>whence</strong> − This is the position from where offset is added. It is specified by one of the following constants −</li>
+</ul>
+</li>
+<li>constants
+<ul>
+<li>SEEK_SET: beginning of file</li>
+<li>SEEK_CUR: current position of file</li>
+<li>SEEK_END: end of file</li>
+</ul>
+</li>
+<li>return value
+<ul>
+<li>if successful, returns zero</li>
+<li>if not, non zero value</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><code>size t fwrite(const void *ptr, size t size, size t nmemb, FILE *stream)</code>
+<ul>
+<li>parameters
+<ul>
+<li><strong>ptr</strong> − This is the pointer to the array of elements to be written.</li>
+<li><strong>size</strong> − This is the size in bytes of each element to be written.</li>
+<li><strong>nmemb</strong> − This is the number of elements, each one with a size of <strong>size</strong> bytes.</li>
+<li><strong>stream</strong> − This is the pointer to a FILE object that specifies an output stream.</li>
+</ul>
+</li>
+<li>return value
+<ul>
+<li>if successful, total number of elements</li>
+<li>if not, error</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Excerpt from strcpy/strncpy man page:
+<ul>
+<li>The strcpy() functions copy the string src to dst (including the terminating ‘\0’ character).</li>
+<li>The strncpy() function copies at most n characters from src into dst. If src is less than n  characters long, the remainder of dst is filled with ‘\0’ characters. Otherwise, dst is not terminated.</li>
+</ul>
+</li>
+<li>Excerpt from strstr man page:
+<ul>
+<li>The strstr() function finds the first occurrence of the substring needle  in the string haystack. It returns a pointer to the beginning of the  substring, or NULL if the substring is not found.</li>
+</ul>
+</li>
+<li>Excerpt from strchr man page:
+<ul>
+<li>The strchr() function locates the first occurrence of c (converted to a char) in the  string pointed to by s. The terminating null character is considered to be part of  the string; therefore if c is ‘\0’, the functions locate the terminating ‘\0’.</li>
+</ul>
+</li>
+<li>Excerpt from strcat man page:
+<ul>
+<li>The strcat() function appends the src string to the dest string, overwriting the terminating null  byte (’\0’) at the end of dest, and then adds a terminating null byte.</li>
+</ul>
+</li>
+<li>Useful Unix programs: cat, cut, wc, grep, sort, head, tail, echo, set, uniq, chmod</li>
+</ul>
+
+      </div>
+    </div>
+  </main><footer class="container-fluid mt-auto">
+    <div class="row justify-content-center">
+      <div class="col-10">
+        <div class="row pt-3 pb-4 border-top">
+          <div class="col-12 col-md-6 mb-2 mb-md-0 text-center text-md-start">
+            <small class="text-secondary">
+              © 2023
+              <a 
+                href="https://tonykim02.github.io"
+                target="_blank" rel="noopener noreferrer"
+                class="text-decoration-none"
+              >
+                Hyun Bin Kim&period;
+              </a>
+              <a
+                href="https://creativecommons.org/licenses/by/4.0/"
+                data-bs-toggle="tooltip"
+                data-bs-title="Except where otherwise noted, the blog posts on this site are licensed under the Creative Commons Attribution 4.0 International (CC BY 4.0) License by the author."
+                class="text-secondary text-decoration-none"
+              >
+                Some rights reserved.
+              </a>
+            </small>
+          </div>
+          <div class="col-12 col-md-6 text-center text-md-end">
+            <small class="text-secondary">
+              Powered by
+              <a 
+                href="https://www.getzola.org/"
+                target="_blank" rel="noopener noreferrer"
+                class="text-decoration-none"
+              >
+                Zola
+              </a>
+              with
+              <a 
+                href="https://github.com/gersonbdev/ataraxia-zola"
+                target="_blank" rel="noopener noreferrer"
+                class="text-decoration-none"
+              >
+                Ataraxia
+              </a>
+              theme.
+            </small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas" aria-labelledby="offcanvasLabel">
+    <div class="offcanvas-body p-0">
+      <div class="sidebar container-fluid vh-100">
+        <div class="row h-100">
+          <div
+            class="col mh-100 px-0 overflow-auto"
+          >
+            <aside class="d-flex flex-column justify-content-between h-100">
+              <div class="mb-4 pt-5 px-3 text-center">
+                <div class="sidebar-avatar mb-2 mx-auto border border-3 rounded-circle">
+                  <a href="https://tonykim02.github.io" target="_blank" rel="noopener noreferrer">
+    <img
+      src="https://tonykim02.github.io./images/avatar.jpeg"
+      alt="Hyun Bin Kim"
+      class="img-fluid"
+    >
+  </a>
+                </div>
+                <div>
+                  <a
+                    href="https://tonykim02.github.io."
+                    class="sidebar-title fs-5 fw-bold text-decoration-none"
+                  >
+                    Hyun Bin Kim's Random Thoughts
+                  </a>
+                </div>
+              </div>
+
+              <div class="sidebar-nav list-group my-auto rounded-0 text-start"><a
+        href="https://tonykim02.github.io./"
+        class="sidebar-nav-item list-group-item list-group-item-action border border-0"
+        data-bs-toggle="tooltip" data-bs-title="Home"
+      >
+        <span class="sidebar-nav-icon bi bi-house ms-2 me-1 fs-4"></span>
+        <span class="sidebar-nav-text">Home</span>
+      </a><a
+        href="https://tonykim02.github.io./blog/"
+        class="sidebar-nav-item list-group-item list-group-item-action border border-0"
+        data-bs-toggle="tooltip" data-bs-title="Blog"
+      >
+        <span class="sidebar-nav-icon bi bi-file-earmark-text ms-2 me-1 fs-4"></span>
+        <span class="sidebar-nav-text">Blog</span>
+      </a><a
+        href="https://tonykim02.github.io./@projects/_index.md"
+        class="sidebar-nav-item list-group-item list-group-item-action border border-0"
+        data-bs-toggle="tooltip" data-bs-title="Projects"
+      >
+        <span class="sidebar-nav-icon bi bi-terminal ms-2 me-1 fs-4"></span>
+        <span class="sidebar-nav-text">Projects</span>
+      </a><a
+        href="https://tonykim02.github.io./notes/"
+        class="sidebar-nav-item list-group-item list-group-item-action border border-0"
+        data-bs-toggle="tooltip" data-bs-title="Notes"
+      >
+        <span class="sidebar-nav-icon bi bi-journal-text ms-2 me-1 fs-4"></span>
+        <span class="sidebar-nav-text">Notes</span>
+      </a><a
+        href="https://tonykim02.github.io/categories"
+        class="sidebar-nav-item list-group-item list-group-item-action border border-0"
+        data-bs-toggle="tooltip" data-bs-title="Category"
+      >
+        <span class="sidebar-nav-icon bi bi-bookmarks ms-2 me-1 fs-4"></span>
+        <span class="sidebar-nav-text">Category</span>
+      </a></div>
+
+              <div class="sidebar-social mt-4 pb-4 px-3">
+                <div class="container-fluid">
+                  <div class="row justify-content-center">
+                    <div class="col-auto px-2">
+        <a
+          href="mailto:hyunbin.kim@mail.utoronto.ca"
+          target="_blank" rel="noopener noreferrer"
+          data-bs-toggle="tooltip"
+          data-bs-title='Email'
+          class="text-decoration-none"
+        >
+          <span class="bi bi-envelope-fill"></span>
+        </a>
+      </div><div class="col-auto px-2">
+        <a
+          href="https://github.com/tonykim02"
+          target="_blank" rel="noopener noreferrer"
+          data-bs-toggle="tooltip"
+          data-bs-title='GitHub'
+          class="text-decoration-none"
+        >
+          <span class="bi bi-github"></span>
+        </a>
+      </div><div class="col-auto px-2">
+        <a
+          href="https://twitter.com/gimhyeo97622817"
+          target="_blank" rel="noopener noreferrer"
+          data-bs-toggle="tooltip"
+          data-bs-title='Twitter'
+          class="text-decoration-none"
+        >
+          <span class="bi bi-twitter"></span>
+        </a>
+      </div><div class="col-auto px-2">
+        <a
+          href="https://www.linkedin.com/in/hyunbin-kim/"
+          target="_blank" rel="noopener noreferrer"
+          data-bs-toggle="tooltip"
+          data-bs-title='LinkedIn'
+          class="text-decoration-none"
+        >
+          <span class="bi bi-linkedin"></span>
+        </a>
+      </div><div class="col-auto px-2">
+        <a
+          href="https://www.facebook.com/"
+          target="_blank" rel="noopener noreferrer"
+          data-bs-toggle="tooltip"
+          data-bs-title='Facebook'
+          class="text-decoration-none"
+        >
+          <span class="bi bi-facebook"></span>
+        </a>
+      </div>
+                  </div>
+                </div>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="searchModalLabel">
+          Search
+        </h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div
+          id="searchInput" role="search" 
+          class="d-flex mb-3 border rounded-5 bg-white"
+        >
+          <input
+            id="search" type="search"
+            class="form-control border border-0 rounded-5 rounded-end"
+            placeholder="Search"
+            aria-label="Search"
+          >
+          <div class="rounded-5 rounded-start py-2 ps-2 pe-3">
+            <span class="bi bi-search"></span>
+          </div>
+        </div>
+        <div class="search-results">
+          <div class="search-results__items">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  <script src="https://tonykim02.github.io./assets/js/bootstrap/bootstrap.bundle.min.js"></script>
+  <script>
+    const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
+    const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl));
+    const myModal = document.getElementById('searchModal');
+    const myInput = document.getElementById('searchInput');
+
+    myModal.addEventListener('shown.bs.modal', () => {
+      myInput.focus()
+    });
+  </script>
+  <script src="https://tonykim02.github.io./elasticlunr.min.js"></script>
+  <script src="https://tonykim02.github.io./search_index.en.js"></script><script src="https://tonykim02.github.io./assets/js/search/search.js"></script>
+</body>
+</html>
