@@ -112,14 +112,23 @@ main {
 }
 
 @media (min-width: 1000px) {
-  .post-layout {
-    grid-template-columns: var(--sidebar-w) var(--content-w);
+  main:has(.post-layout) {
+    max-width: calc(var(--content-w) + 600px);
   }
+
+  .post-layout {
+    grid-template-columns: 1fr var(--content-w) 1fr;
+  }
+
   .post-sidebar {
     order: -1;
+    justify-self: end;
+    padding-right: 2.5rem;
     position: sticky;
-    top: 4rem;
+    top: 50vh;
+    transform: translateY(-50%);
     align-self: start;
+    margin-top: calc(50vh - 5rem);
   }
 }
 
