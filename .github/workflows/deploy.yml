@@ -12,7 +12,7 @@ permissions:
 
 concurrency:
   group: pages
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 jobs:
   build:
@@ -23,7 +23,7 @@ jobs:
         with:
           node-version: 22
           cache: npm
-      - uses: actions/configure-pages@v4
+      - uses: actions/configure-pages@v5
       - run: npm install
       - run: npm run build
       - uses: actions/upload-pages-artifact@v3
