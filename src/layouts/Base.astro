@@ -1,0 +1,68 @@
+---
+import '../styles/global.css';
+
+interface Props {
+  title: string;
+  description?: string;
+  ogImage?: string;
+}
+
+const { title, description = "A technical blog.", ogImage } = Astro.props;
+const siteTitle = "tonykim.dev";
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="canonical" href={canonicalURL} />
+
+  <title>{title === siteTitle ? title : `${title} — ${siteTitle}`}</title>
+  <meta name="description" content={description} />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content={title} />
+  <meta property="og:description" content={description} />
+  <meta property="og:url" content={canonicalURL} />
+  <meta property="og:type" content="website" />
+  {ogImage && <meta property="og:image" content={ogImage} />}
+
+  <!-- Favicon placeholder -->
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+  <!-- RSS autodiscovery -->
+  <link
+    rel="alternate"
+    type="application/rss+xml"
+    title={siteTitle}
+    href="/rss.xml"
+  />
+</head>
+<body>
+  <div class="site-wrapper">
+    <header class="top-nav">
+      <a href="/" class="site-name">{siteTitle}</a>
+      <nav>
+        <a href="/">writing</a>
+        <a href="/about">about</a>
+        <a href="/rss.xml">rss</a>
+      </nav>
+    </header>
+
+    <main>
+      <slot />
+    </main>
+
+    <footer class="site-footer">
+      <span>© {new Date().getFullYear()} tonykim.dev</span>
+      <span>
+        <a href="https://github.com/TonyKim02" target="_blank" rel="noopener">github</a>
+        ·
+        <a href="/rss.xml">rss</a>
+      </span>
+    </footer>
+  </div>
+</body>
+</html>

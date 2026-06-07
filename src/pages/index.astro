@@ -1,0 +1,36 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../layouts/Base.astro';
+
+const allPosts = await getCollection('posts', ({ data }) => !data.draft);
+const posts = allPosts.sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
+
+function formatDate(d: Date) {
+  return d.toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: '2-digit' });
+}
+---
+
+<Base title="yourname.dev" description="Writing on systems programming, performance, and building things.">
+  <div class="home-layout">
+    <div class="home-header">
+      <h1>writing</h1>
+      <p>Notes on systems programming, C++, performance, and whatever else I'm building.</p>
+    </div>
+
+    <ul class="post-list">
+      {posts.map(post => (
+        <li class="post-list-item">
+          <span class="post-list-date">{formatDate(post.data.date)}</span>
+          <div>
+            <a class="post-list-title" href={`/posts/${post.id}`}>
+              {post.data.title}
+            </a>
+            {post.data.description && (
+              <p class="post-list-desc">{post.data.description}</p>
+            )}
+          </div>
+        </li>
+      ))}
+    </ul>
+  </div>
+</Base>
