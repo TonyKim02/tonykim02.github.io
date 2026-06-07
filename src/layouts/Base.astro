@@ -32,13 +32,6 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
   <!-- Favicon placeholder -->
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 
-  <!-- RSS autodiscovery -->
-  <link
-    rel="alternate"
-    type="application/rss+xml"
-    title={siteTitle}
-    href="/rss.xml"
-  />
 </head>
 <body>
   <div class="site-wrapper">
@@ -47,7 +40,6 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
       <nav>
         <a href="/">writing</a>
         <a href="/about">about</a>
-        <a href="/rss.xml">rss</a>
       </nav>
     </header>
 
@@ -59,8 +51,6 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
       <span>© {new Date().getFullYear()} tonykim.dev</span>
       <span>
         <a href="https://github.com/TonyKim02" target="_blank" rel="noopener">github</a>
-        ·
-        <a href="/rss.xml">rss</a>
       </span>
     </footer>
   </div>
